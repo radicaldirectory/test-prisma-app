@@ -52,3 +52,5 @@ const Blog: React.FC<Props> = (props) => {
 };
 
 export default Blog;
+
+//TODO #3 split buttons, posts, form inputs all into seperate components
