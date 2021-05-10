@@ -1,11 +1,13 @@
 import React from "react";
 import { GetServerSideProps } from "next";
 import ReactMarkdown from "react-markdown";
-import Layout from "../../components/Layout";
+import Layout from "@components/Layout";
 import Router from "next/router";
-import { PostProps } from "../../components/Post";
+import { PostProps } from "@components/Post";
+import Title from "@components/Title";
+import Button from "@components/Button";
 import { useSession } from "next-auth/client";
-import prisma from "../../lib/prisma";
+import prisma from "@lib/prisma";
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const post = await prisma.post.findUnique({
@@ -52,17 +54,17 @@ const Post: React.FC<PostProps> = (props) => {
   return (
     <Layout>
       <div>
-        <h2>{title}</h2>
+        <Title>{title}</Title>
         <p>By {props?.author?.name || "Unknown author"}</p>
         <ReactMarkdown source={props.content} />
         {!props.published && userHasValidSession && postBelongsToUser && (
-          <button onClick={() => publishPost(props.id)}>Publish</button>
+          <Button onClick={() => publishPost(props.id)}>Publish</Button>
         )}
         {!props.published && userHasValidSession && postBelongsToUser && (
-          <button onClick={() => publishPost(props.id)}>Publish</button>
+          <Button onClick={() => publishPost(props.id)}>Publish</Button>
         )}
         {userHasValidSession && postBelongsToUser && (
-          <button onClick={() => deletePost(props.id)}>Delete</button>
+          <Button onClick={() => deletePost(props.id)}>Delete</Button>
         )}
       </div>
       <style jsx>{`

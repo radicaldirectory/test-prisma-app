@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { signOut, useSession } from "next-auth/client";
+import Button from "@components/Button";
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -150,14 +151,12 @@ const Header: React.FC = () => {
         <p>
           {session.user.name} ({session.user.email})
         </p>
-        <Link href="/create">
-          <button>
-            <a>New post</a>
-          </button>
-        </Link>
-        <button onClick={() => signOut()}>
+        <Button href="/create">
+          <a>New post</a>
+        </Button>
+        <Button onClick={() => signOut()}>
           <a>Log out</a>
-        </button>
+        </Button>
         <style jsx>{`
           a {
             text-decoration: none;
