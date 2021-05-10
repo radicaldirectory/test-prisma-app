@@ -1,3 +1,5 @@
+import styles from "./TextArea.module.css";
+
 type Props = {
   cols: number;
   rows: number;
@@ -8,6 +10,7 @@ type Props = {
 
 const TextArea: React.FC<Props> = (props) => (
   <textarea
+    className={styles.textArea}
     cols={props.cols}
     rows={props.rows}
     onChange={props.onChange}

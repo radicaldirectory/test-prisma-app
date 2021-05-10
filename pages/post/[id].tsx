@@ -1,13 +1,14 @@
 import React from "react";
 import { GetServerSideProps } from "next";
 import ReactMarkdown from "react-markdown";
-import Layout from "@components/Layout/Layout";
+import Layout from "@components/Layout";
 import Router from "next/router";
-import { PostProps } from "@components/Post/Post";
+import { PostProps } from "@components/Post";
 import Title from "@components/Title/Title";
-import Button from "@components/Button/Button";
+import Button from "@components/Button";
 import { useSession } from "next-auth/client";
 import prisma from "@lib/prisma";
+import styles from "./post.module.css";
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const post = await prisma.post.findUnique({
@@ -60,34 +61,10 @@ const Post: React.FC<PostProps> = (props) => {
         {!props.published && userHasValidSession && postBelongsToUser && (
           <Button onClick={() => publishPost(props.id)}>Publish</Button>
         )}
-        {!props.published && userHasValidSession && postBelongsToUser && (
-          <Button onClick={() => publishPost(props.id)}>Publish</Button>
-        )}
         {userHasValidSession && postBelongsToUser && (
           <Button onClick={() => deletePost(props.id)}>Delete</Button>
         )}
       </div>
-      <style jsx>{`
-        .page {
-          background: white;
-          padding: 2rem;
-        }
-
-        .actions {
-          margin-top: 2rem;
-        }
-
-        button {
-          background: #ececec;
-          border: 0;
-          border-radius: 0.125rem;
-          padding: 1rem 2rem;
-        }
-
-        button + button {
-          margin-left: 1rem;
-        }
-      `}</style>
     </Layout>
   );
 };

@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.nav p {
+  display: inline-block;
+  font-size: 13px;
+  padding-right: 1rem;
+}
+
+.nav a + a {
+  margin-left: 1rem;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.right a {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left a[data-active="true"] {
+  color: gray;
+}

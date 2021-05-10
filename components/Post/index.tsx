@@ -20,18 +20,12 @@ const Post: React.FC<{ post: PostProps; className?: string }> = ({
   const authorName = post.author ? post.author.name : "Unknown author";
   return (
     <div
-      className={className}
-      onClick={() => Router.push("/p/[id]", `/p/${post.id}`)}
+      className={`post ${className}`}
+      onClick={() => Router.push("/post/[id]", `/post/${post.id}`)}
     >
       <h2>{post.title}</h2>
       <small>By {authorName}</small>
       <ReactMarkdown source={post.content} />
-      <style jsx>{`
-        div {
-          color: inherit;
-          padding: 2rem;
-        }
-      `}</style>
     </div>
   );
 };

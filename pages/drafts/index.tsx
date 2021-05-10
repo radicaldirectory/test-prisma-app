@@ -1,10 +1,11 @@
 import React from "react";
 import { GetServerSideProps } from "next";
-import Layout from "../components/Layout/Layout";
-import Post, { PostProps } from "../components/Post/Post";
+import Layout from "@components/Layout";
+import Post, { PostProps } from "@components/Post";
+import Page from "@components/Page";
 import Title from "@components/Title/Title";
 import { useSession, getSession } from "next-auth/client";
-import prisma from "../lib/prisma";
+import prisma from "@lib/prisma";
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const session = await getSession({ req });
@@ -47,28 +48,14 @@ const Drafts: React.FC<Props> = (props) => {
 
   return (
     <Layout>
-      <div className="page">
+      <Page>
         <Title>My Drafts</Title>
         <main>
           {props.drafts.map((post) => (
             <Post post={post} key={post.id} className="post" />
           ))}
         </main>
-      </div>
-      <style jsx>{`
-        .post {
-          background: white;
-          transition: box-shadow 0.1s ease-in;
-        }
-
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
-        }
-
-        .post + .post {
-          margin-top: 2rem;
-        }
-      `}</style>
+      </Page>
     </Layout>
   );
 };

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import Layout from "@components/Layout/Layout";
+import Layout from "@components/Layout";
 import Title from "@components/Title/Title";
-import TextArea from "@components/TextArea/TextArea";
-import TextInput from "@components/TextInput/TextInput";
+import TextArea from "@components/TextArea";
+import TextInput from "@components/TextInput";
+import Button from "@components/Button";
 import Router from "next/router";
+import styles from "./create.module.css";
 
 const Draft: React.FC = () => {
   const [title, setTitle] = useState("");
@@ -40,39 +42,11 @@ const Draft: React.FC = () => {
           rows={8}
           value={content}
         />
-        <input disabled={!content || !title} type="submit" value="Create" />
-        <a className="back" href="#" onClick={() => Router.push("/")}>
+        <Button disabled={!content || !title} type="submit" value="Create" />
+        <a className={styles.back} href="#" onClick={() => Router.push("/")}>
           or Cancel
         </a>
       </form>
-      <style jsx>{`
-        .page {
-          background: white;
-          padding: 3rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        input[type="text"],
-        textarea {
-          width: 100%;
-          padding: 0.5rem;
-          margin: 0.5rem 0;
-          border-radius: 0.25rem;
-          border: 0.125rem solid rgba(0, 0, 0, 0.2);
-        }
-
-        input[type="submit"] {
-          background: #ececec;
-          border: 0;
-          padding: 1rem 2rem;
-        }
-
-        .back {
-          margin-left: 1rem;
-        }
-      `}</style>
     </Layout>
   );
 };
