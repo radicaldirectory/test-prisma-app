@@ -79,3 +79,5 @@ const Draft: React.FC = () => {
 };
 
 export default Draft;
+
+//TODO #2 set up Slate editor to replace textareas
