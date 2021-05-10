@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Layout from "@components/Layout";
-import Title from "@components/Title";
-import TextArea from "@components/TextArea";
-import TextInput from "@components/TextInput";
+import Layout from "@components/Layout/Layout";
+import Title from "@components/Title/Title";
+import TextArea from "@components/TextArea/TextArea";
+import TextInput from "@components/TextInput/TextInput";
 import Router from "next/router";
 
 const Draft: React.FC = () => {

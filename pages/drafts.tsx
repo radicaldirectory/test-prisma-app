@@ -1,8 +1,8 @@
 import React from "react";
 import { GetServerSideProps } from "next";
-import Layout from "../components/Layout";
-import Post, { PostProps } from "../components/Post";
-import Title from "@components/Title";
+import Layout from "../components/Layout/Layout";
+import Post, { PostProps } from "../components/Post/Post";
+import Title from "@components/Title/Title";
 import { useSession, getSession } from "next-auth/client";
 import prisma from "../lib/prisma";
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { GetServerSideProps } from "next";
 import ReactMarkdown from "react-markdown";
-import Layout from "@components/Layout";
+import Layout from "@components/Layout/Layout";
 import Router from "next/router";
-import { PostProps } from "@components/Post";
-import Title from "@components/Title";
-import Button from "@components/Button";
+import { PostProps } from "@components/Post/Post";
+import Title from "@components/Title/Title";
+import Button from "@components/Button/Button";
 import { useSession } from "next-auth/client";
 import prisma from "@lib/prisma";
 

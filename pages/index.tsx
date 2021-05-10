@@ -1,8 +1,8 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import Layout from "@components/Layout";
-import Post, { PostProps } from "@components/Post";
-import Title from "@components/Title";
+import Layout from "@components/Layout/Layout";
+import Post, { PostProps } from "@components/Post/Post";
+import Title from "@components/Title/Title";
 import prisma from "@lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
