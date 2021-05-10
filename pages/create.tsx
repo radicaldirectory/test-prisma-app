@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
+import Title from "@components/Title";
+import TextArea from "@components/TextArea";
+import TextInput from "@components/TextInput";
 import Router from "next/router";
 
 const Draft: React.FC = () => {
@@ -23,29 +26,25 @@ const Draft: React.FC = () => {
 
   return (
     <Layout>
-      <div>
-        <form onSubmit={submitData}>
-          <h1>New Draft</h1>
-          <input
-            autoFocus
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Title"
-            type="text"
-            value={title}
-          />
-          <textarea
-            cols={50}
-            onChange={(e) => setContent(e.target.value)}
-            placeholder="Content"
-            rows={8}
-            value={content}
-          />
-          <input disabled={!content || !title} type="submit" value="Create" />
-          <a className="back" href="#" onClick={() => Router.push("/")}>
-            or Cancel
-          </a>
-        </form>
-      </div>
+      <form onSubmit={submitData}>
+        <Title>New Draft</Title>
+        <TextInput
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Title"
+          value={title}
+        />
+        <TextArea
+          cols={50}
+          onChange={(e) => setContent(e.target.value)}
+          placeholder="Content"
+          rows={8}
+          value={content}
+        />
+        <input disabled={!content || !title} type="submit" value="Create" />
+        <a className="back" href="#" onClick={() => Router.push("/")}>
+          or Cancel
+        </a>
+      </form>
       <style jsx>{`
         .page {
           background: white;
@@ -79,3 +78,5 @@ const Draft: React.FC = () => {
 };
 
 export default Draft;
+
+//TODO #2 set up Slate editor to replace textareas

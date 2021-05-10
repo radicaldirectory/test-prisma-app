@@ -2,6 +2,7 @@ import React from "react";
 import { GetServerSideProps } from "next";
 import Layout from "../components/Layout";
 import Post, { PostProps } from "../components/Post";
+import Title from "@components/Title";
 import { useSession, getSession } from "next-auth/client";
 import prisma from "../lib/prisma";
 
@@ -38,7 +39,7 @@ const Drafts: React.FC<Props> = (props) => {
   if (!session) {
     return (
       <Layout>
-        <h1>My Drafts</h1>
+        <Title>My Drafts</Title>
         <div>You need to be authenticated to view this page.</div>
       </Layout>
     );
@@ -47,12 +48,10 @@ const Drafts: React.FC<Props> = (props) => {
   return (
     <Layout>
       <div className="page">
-        <h1>My Drafts</h1>
+        <Title>My Drafts</Title>
         <main>
           {props.drafts.map((post) => (
-            <div key={post.id} className="post">
-              <Post post={post} />
-            </div>
+            <Post post={post} key={post.id} className="post" />
           ))}
         </main>
       </div>

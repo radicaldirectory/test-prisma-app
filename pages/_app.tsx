@@ -10,3 +10,5 @@ const App = ({ Component, pageProps }: AppProps) => {
 };
 
 export default App;
+
+//TODO #1 move inline Styled JSX into CSS modules
