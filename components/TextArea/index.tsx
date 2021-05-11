@@ -1,14 +1,14 @@
 import styles from "./TextArea.module.css";
 
-type Props = {
+export type TextAreaProps = {
   cols: number;
   rows: number;
-  onChange: (e?: any) => any;
+  onChange?: (e?: any) => any;
   placeholder: string;
-  value: any;
+  value: string;
 };
 
-const TextArea: React.FC<Props> = (props) => (
+const TextArea: React.FC<TextAreaProps> = (props) => (
   <textarea
     className={styles.textArea}
     cols={props.cols}

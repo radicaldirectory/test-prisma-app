@@ -2,7 +2,7 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "@components/Layout";
 import Post, { PostProps } from "@components/Post";
-import Title from "@components/Title/Title";
+import Title from "@components/Title";
 import prisma from "@lib/prisma";
 import styles from "./index.module.css";
 import Page from "@components/Page";

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { signOut, useSession } from "next-auth/client";
-import Button from "@components/Button";
+import Button from "../Button";
 import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
@@ -19,7 +19,6 @@ const Header: React.FC = () => {
           Feed
         </a>
       </Link>
-      <style jsx>{``}</style>
     </div>
   );
 

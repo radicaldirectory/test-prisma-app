@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import Link from "next/link";
-import styles from "./Button.module.css";
+import styles from "./Button/Button.module.css";
 
-export interface ButtonProps {
+interface Props {
   children?: ReactNode;
   href?: string;
   onClick?: () => any;
@@ -11,7 +11,7 @@ export interface ButtonProps {
   type?: "button" | "reset" | "submit";
 }
 
-const Button: React.FC<ButtonProps & React.HTMLProps<HTMLButtonElement>> = (
+const Button: React.FC<Props & React.HTMLProps<HTMLButtonElement>> = (
   props
 ) => (
   <Link href={props.href ?? "/"}>

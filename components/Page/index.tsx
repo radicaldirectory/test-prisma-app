@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import styles from "./Page.module.css";
 
-type Props = {
+export type PageProps = {
   children: ReactNode;
 };
 
-const Page: React.FC<Props> = (props) => (
+const Page: React.FC<PageProps> = (props) => (
   <div className={styles.page}>{props.children}</div>
 );
 

@@ -3,7 +3,7 @@ import { GetServerSideProps } from "next";
 import Layout from "@components/Layout";
 import Post, { PostProps } from "@components/Post";
 import Page from "@components/Page";
-import Title from "@components/Title/Title";
+import Title from "@components/Title";
 import { useSession, getSession } from "next-auth/client";
 import prisma from "@lib/prisma";
 

@@ -1,12 +1,12 @@
 import styles from "./TextInput.module.css";
 
-type Props = {
-  onChange: (e?: any) => any;
+export type TextInputProps = {
+  onChange?: (e?: any) => any;
   placeholder: string;
   value: any;
 };
 
-const TextInput: React.FC<Props> = (props) => (
+const TextInput: React.FC<TextInputProps> = (props) => (
   <input
     autoFocus
     type="text"

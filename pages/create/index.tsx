@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "@components/Layout";
-import Title from "@components/Title/Title";
+import Title from "@components/Title";
 import TextArea from "@components/TextArea";
 import TextInput from "@components/TextInput";
 import Button from "@components/Button";
