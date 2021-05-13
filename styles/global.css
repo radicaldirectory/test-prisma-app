@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  /* variables can go here */
+  /* Fonts XXXS XXS XS S M L XL XXL XXXL rem? em? */
+  /* Spacing XXXS XXS XS S M L XL XXL XXXL px? rem? em? */
 }
 
 *,

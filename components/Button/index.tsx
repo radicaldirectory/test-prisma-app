@@ -11,9 +11,7 @@ export interface ButtonProps {
   type?: "button" | "reset" | "submit";
 }
 
-const Button: React.FC<ButtonProps & React.HTMLProps<HTMLButtonElement>> = (
-  props
-) => (
+const Button: React.FC<ButtonProps> = (props) => (
   <Link href={props.href ?? "/"}>
     <button {...props} className={styles.button}>
       {props.children ?? props.value}

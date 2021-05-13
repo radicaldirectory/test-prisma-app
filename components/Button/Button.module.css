@@ -2,9 +2,9 @@
   border: none;
   cursor: pointer;
   background: #ececec;
-  border: 0;
+  border: 1px solid black;
   border-radius: 0.125rem;
-  padding: 1rem 2rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .button + .button {
