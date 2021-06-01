@@ -1,6 +1,7 @@
 import React from "react";
 import Router from "next/router";
 import ReactMarkdown from "react-markdown";
+import { styled } from "../../stitches.config";
 
 export type PostProps = {
   id: number;
@@ -13,20 +14,28 @@ export type PostProps = {
   published: boolean;
 };
 
-const Post: React.FC<{ post: PostProps; className?: string }> = ({
-  post,
-  className
-}) => {
+const StyledPost = styled("div", {
+  color: "inherit",
+  padding: "2rem",
+  background: "white",
+  transition: "box-shadow 0.1s ease-in",
+
+  "&hover": {
+    boxShadow: "1px 1px 3px #aaa"
+  },
+  "+ div": {
+    marginTop: "2rem"
+  }
+});
+
+const Post: React.FC<{ post: PostProps }> = ({ post }) => {
   const authorName = post.author ? post.author.name : "Unknown author";
   return (
-    <div
-      className={`post ${className}`}
-      onClick={() => Router.push("/post/[id]", `/post/${post.id}`)}
-    >
+    <StyledPost onClick={() => Router.push("/post/[id]", `/post/${post.id}`)}>
       <h2>{post.title}</h2>
       <small>By {authorName}</small>
       <ReactMarkdown source={post.content} />
-    </div>
+    </StyledPost>
   );
 };
 

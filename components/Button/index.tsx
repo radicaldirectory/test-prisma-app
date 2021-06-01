@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import Link from "next/link";
-import styles from "./Button.module.css";
+import { styled } from "../../stitches.config";
 
 export interface ButtonProps {
   children?: ReactNode;
@@ -11,12 +10,20 @@ export interface ButtonProps {
   type?: "button" | "reset" | "submit";
 }
 
+const StyledButton = styled("button", {
+  cursor: "pointer",
+  background: "#ececec",
+  border: "1px solid black",
+  borderRadius: "0.125rem",
+  padding: "0.25rem 0.5rem",
+
+  "+ button": {
+    marginLeft: "1rem"
+  }
+});
+
 const Button: React.FC<ButtonProps> = (props) => (
-  <Link href={props.href ?? "/"}>
-    <button {...props} className={styles.button}>
-      {props.children ?? props.value}
-    </button>
-  </Link>
+  <StyledButton {...props}>{props.children ?? props.value}</StyledButton>
 );
 
 export default Button;
