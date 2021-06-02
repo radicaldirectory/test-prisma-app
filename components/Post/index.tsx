@@ -1,4 +1,3 @@
-import React from "react";
 import Router from "next/router";
 import ReactMarkdown from "react-markdown";
 import { styled } from "../../stitches.config";
