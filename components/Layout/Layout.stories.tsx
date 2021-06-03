@@ -2,7 +2,7 @@ import Layout, { LayoutProps } from "./index";
 import { Story, Meta } from "@storybook/react";
 
 export default {
-  title: "MyComponents/Layout",
+  title: "Layout",
   component: Layout
 } as Meta;
 

@@ -1,14 +1,4 @@
-import { ReactNode } from "react";
 import { styled } from "../../stitches.config";
-
-export interface ButtonProps {
-  children?: ReactNode;
-  href?: string;
-  onClick?: () => any;
-  disabled?: boolean;
-  value?: string;
-  type?: "button" | "reset" | "submit";
-}
 
 const StyledButton = styled("button", {
   cursor: "pointer",
@@ -19,11 +9,35 @@ const StyledButton = styled("button", {
 
   "+ button": {
     marginLeft: "1rem"
+  },
+
+  variants: {
+    size: {
+      "1": {
+        borderRadius: "$1",
+        height: "$5",
+        px: "$2",
+        fontSize: "$1",
+        lineHeight: "$sizes$5"
+      },
+      "2": {
+        borderRadius: "$2",
+        height: "$6",
+        px: "$3",
+        fontSize: "$3",
+        lineHeight: "$sizes$6"
+      },
+      "3": {
+        borderRadius: "$2",
+        height: "$7",
+        px: "$4",
+        fontSize: "$4",
+        lineHeight: "$sizes$7"
+      }
+    }
   }
 });
 
-const Button: React.FC<ButtonProps> = (props) => (
-  <StyledButton {...props}>{props.children ?? props.value}</StyledButton>
-);
-
-export default Button;
+export const Button = (props) => {
+  return <StyledButton {...props} />;
+};

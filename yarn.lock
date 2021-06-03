@@ -2842,7 +2842,7 @@
     "@radix-ui/react-polymorphic" "0.0.11"
     "@radix-ui/react-primitive" "0.0.13"
 
-"@radix-ui/react-polymorphic@0.0.11":
+"@radix-ui/react-polymorphic@0.0.11", "@radix-ui/react-polymorphic@^0.0.11":
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.11.tgz#23f26b14e67a0e57cd981c37618d603b952af80d"
   integrity sha512-CztM4962esOx3i1ls6GuY9RBYIY2Df1Bmp5emHRTxZi8owyCZwZYPctYaDuMO0qIGikPiKD8HBion/m7VWUyEA==

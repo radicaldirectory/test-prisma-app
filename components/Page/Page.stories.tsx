@@ -3,7 +3,7 @@ import Page, { PageProps } from "./index";
 import { Story, Meta } from "@storybook/react";
 
 export default {
-  title: "MyComponents/Page",
+  title: "Page",
   component: Page
 } as Meta;
 

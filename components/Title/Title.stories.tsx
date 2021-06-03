@@ -3,7 +3,7 @@ import Title, { TitleProps } from "./index";
 import { Story, Meta } from "@storybook/react";
 
 export default {
-  title: "MyComponents/Title",
+  title: "Title",
   component: Title
 } as Meta;
 

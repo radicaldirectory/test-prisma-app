@@ -1,13 +1,13 @@
 import React from "react";
-import Button, { ButtonProps } from "./index";
+import { Button } from "./";
 import { Story, Meta } from "@storybook/react";
 
 export default {
-  title: "MyComponents/Button",
+  title: "Button",
   component: Button
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => (
+const Template: Story = (args) => (
   <Button {...args}>My button text time</Button>
 );
 

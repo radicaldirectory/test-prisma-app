@@ -3,7 +3,7 @@ import Post, { PostProps } from "./index";
 import { Story, Meta } from "@storybook/react";
 
 export default {
-  title: "MyComponents/Post",
+  title: "Post",
   component: Post
 } as Meta;
 
