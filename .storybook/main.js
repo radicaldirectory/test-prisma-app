@@ -6,11 +6,11 @@ module.exports = {
   stories: [
     //these ones do not work due to aliases not working? try removing?
     "../components/**/*.stories.mdx",
-    "../components/**/*.stories.@(js|jsx|ts|tsx)",
+    "../components/**/*.stories.@(js|jsx|ts|tsx)"
     //these ones work:
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)",
-    "../stories/**/*.stories.tsx"
+    // "../stories/**/*.stories.mdx",
+    // "../stories/**/*.stories.@(js|jsx|ts|tsx)",
+    // "../stories/**/*.stories.tsx"
   ],
   addons: [
     "@storybook/addon-links",
