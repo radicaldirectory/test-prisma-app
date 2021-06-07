@@ -2,14 +2,29 @@ import React from "react";
 import { Button } from "./";
 import { Story, Meta } from "@storybook/react";
 
-export default {
+const meta: Meta = {
   title: "Button",
-  component: Button
-} as Meta;
+  component: Button,
+  parameters: {
+    controls: { expanded: true }
+  }
+};
+
+export default meta;
 
 const Template: Story = (args) => (
-  <Button {...args}>My button text time</Button>
+  <>
+    <Button type="solid" size="sm" {...args}>
+      Button
+    </Button>
+    <Button type="outline" size="md" {...args}>
+      Button
+    </Button>
+    <Button type="ghost" size="lg" {...args}>
+      Button
+    </Button>
+  </>
 );
 
-export const ButtonStory = Template.bind({});
-ButtonStory.args = {};
+export const Default = Template.bind({});
+Default.args = {};

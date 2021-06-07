@@ -1,6 +1,6 @@
 import Link from "next/link";
-import styles from "../Header.module.css";
-import Button from "@components/Button";
+import { Button } from "@components/Button";
+import { styled } from "../../../stitches.config";
 
 export interface HeaderRightProps {
   session?: {
@@ -12,6 +12,10 @@ export interface HeaderRightProps {
   loading?: boolean;
   signOut: () => any;
 }
+
+const StyledHeaderRight = styled("div", {
+  marginLeft: "auto"
+});
 
 const HeaderRight: React.FC<HeaderRightProps> = ({
   session,
@@ -26,12 +30,12 @@ const HeaderRight: React.FC<HeaderRightProps> = ({
   );
   const userInfo = (
     <p>
-      {session?.user.name} ({session?.user.email})
+      {session?.user.name} – {session?.user.email}
     </p>
   );
   const newPost = (
-    <Button href="/create">
-      <a>New post</a>
+    <Button>
+      <a href="/create">New post</a>
     </Button>
   );
   const logOut = (
@@ -40,8 +44,10 @@ const HeaderRight: React.FC<HeaderRightProps> = ({
     </Button>
   );
 
+  // styledheaderright replaces div with className={styles.right}
+
   return (
-    <div className={styles.right}>
+    <StyledHeaderRight>
       {loading ? validatingSession : null}
       {session ? (
         <>
@@ -52,7 +58,7 @@ const HeaderRight: React.FC<HeaderRightProps> = ({
       ) : (
         loginLink
       )}
-    </div>
+    </StyledHeaderRight>
   );
 };
 

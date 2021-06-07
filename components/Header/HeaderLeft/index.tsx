@@ -1,6 +1,4 @@
 import Link from "next/link";
-import styles from "../Header.module.css";
-
 export interface HeaderLeftProps {
   session: boolean;
 }
@@ -16,9 +14,9 @@ const HeaderLeft: React.FC<HeaderLeftProps> = ({ session }) => {
   );
 
   return (
-    <nav className={styles.nav}>
+    <nav>
       <Link href="/">
-        <a className={styles.bold}>Feed</a>
+        <a>Feed</a>
       </Link>
       {session ? draftsLink : null}
     </nav>

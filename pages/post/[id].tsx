@@ -5,10 +5,9 @@ import Layout from "@components/Layout";
 import Router from "next/router";
 import { PostProps } from "@components/Post";
 import Title from "@components/Title";
-import Button from "@components/Button";
+import { Button } from "@components/Button";
 import { useSession } from "next-auth/client";
 import prisma from "@lib/prisma";
-import styles from "./post.module.css";
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const post = await prisma.post.findUnique({

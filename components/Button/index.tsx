@@ -2,39 +2,58 @@ import { styled } from "../../stitches.config";
 
 const StyledButton = styled("button", {
   cursor: "pointer",
-  background: "#ececec",
-  border: "1px solid black",
-  borderRadius: "0.125rem",
   padding: "0.25rem 0.5rem",
+  // textTransform: "uppercase",
+  fontWeight: "900",
+  letterSpacing: "0.1em",
 
   "+ button": {
     marginLeft: "1rem"
   },
 
   variants: {
+    type: {
+      solid: {
+        background: "black",
+        color: "white",
+        border: "none"
+      },
+      outline: {
+        background: "white",
+        color: "black",
+        border: "2px solid black"
+      },
+      ghost: {
+        background: "white",
+        color: "black",
+        border: "none"
+      },
+      link: {}
+    },
     size: {
-      "1": {
-        borderRadius: "$1",
+      sm: {
         height: "$5",
         px: "$2",
         fontSize: "$1",
         lineHeight: "$sizes$5"
       },
-      "2": {
-        borderRadius: "$2",
+      md: {
         height: "$6",
         px: "$3",
         fontSize: "$3",
         lineHeight: "$sizes$6"
       },
-      "3": {
-        borderRadius: "$2",
+      lg: {
         height: "$7",
         px: "$4",
         fontSize: "$4",
         lineHeight: "$sizes$7"
       }
     }
+  },
+  defaultVariants: {
+    size: "md",
+    type: "outline"
   }
 });
 

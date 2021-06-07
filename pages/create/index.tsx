@@ -3,9 +3,8 @@ import Layout from "@components/Layout";
 import Title from "@components/Title";
 import TextArea from "@components/TextArea";
 import TextInput from "@components/TextInput";
-import Button from "@components/Button";
+import { Button } from "@components/Button";
 import Router from "next/router";
-import styles from "./create.module.css";
 
 const Draft: React.FC = () => {
   const [title, setTitle] = useState("");
@@ -42,8 +41,10 @@ const Draft: React.FC = () => {
           rows={8}
           value={content}
         />
-        <Button disabled={!content || !title} type="submit" value="Create" />
-        <a className={styles.back} href="#" onClick={() => Router.push("/")}>
+        <Button disabled={!content || !title} type="submit">
+          Create{" "}
+        </Button>
+        <a href="#" onClick={() => Router.push("/")}>
           or Cancel
         </a>
       </form>
