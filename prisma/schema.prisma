@@ -11,14 +11,16 @@ generator client {
 }
 
 model User {
-  id            Int       @id @default(autoincrement())
+  id            Int             @id @default(autoincrement())
   name          String?
-  email         String?   @unique
-  emailVerified DateTime? @map(name: "email_verified")
+  email         String?         @unique
+  emailVerified DateTime?       @map(name: "email_verified")
   image         String?
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
+  createdAt     DateTime        @default(now()) @map(name: "created_at")
+  updatedAt     DateTime        @updatedAt @map(name: "updated_at")
   posts         Post[]
+  events        UsersOnEvents[]
+  groups        UsersOnGroups[]
 
   @@map(name: "users")
 }
@@ -69,10 +71,14 @@ model VerificationRequest {
 model Post {
   id        Int     @id @default(autoincrement())
   title     String
-  content   String?
+  content   Json
   published Boolean @default(false)
   author    User?   @relation(fields: [authorId], references: [id])
   authorId  Int?
+  group     Group?  @relation(fields: [groupId], references: [id])
+  groupId   Int?
+  event     Event?  @relation(fields: [eventId], references: [id])
+  eventId   Int?
 }
 
 //new models
@@ -80,25 +86,100 @@ model Post {
 model Document {
   id        Int      @id @default(autoincrement())
   content   Json
+  published Boolean  @default(false)
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @default(now()) @map(name: "updated_at")
   group     Group?
+  tag       Tag?
+  event     Event?
+}
+
+model Media {
+  id        Int      @id @default(autoincrement())
+  name      String
+  metadata  Json
+  url       String   @unique
   createdAt DateTime @default(now()) @map(name: "created_at")
   updatedAt DateTime @default(now()) @map(name: "updated_at")
 }
 
-model Media {
-  id Int @id @default(autoincrement())
-}
-
 model Group {
-  id         Int      @id @default(autoincrement())
-  documents  Document @relation(fields: [documentId], references: [id])
+  id         Int             @id @default(autoincrement())
+  name       String
+  location   Json
+  acronym    String?         @db.VarChar(16)
+  document   Document        @relation(fields: [documentId], references: [id])
   documentId Int
+  posts      Post[]
+  tags       TagsOnGroups[]
+  users      UsersOnGroups[]
+  parents    Group[]         @relation("Subgroup")
+  children   Group[]         @relation("Subgroup")
 }
 
 model Tag {
-  id Int @id @default(autoincrement())
+  name       String         @id
+  document   Document?      @relation(fields: [documentId], references: [id])
+  documentId Int?
+  groups     TagsOnGroups[]
+  events     TagsOnEvents[]
 }
 
 model Event {
-  id Int @id @default(autoincrement())
+  id         Int             @id @default(autoincrement())
+  name       String
+  eventStart DateTime
+  eventEnd   DateTime
+  location   Json
+  document   Document        @relation(fields: [documentId], references: [id])
+  documentId Int
+  posts      Post[]
+  tags       TagsOnEvents[]
+  users      UsersOnEvents[]
+}
+
+model TagsOnGroups {
+  group     Group    @relation(fields: [groupId], references: [id])
+  groupId   Int
+  tag       Tag      @relation(fields: [tagId], references: [name])
+  tagId     String
+  createdAt DateTime @default(now())
+
+  @@id([groupId, tagId])
+}
+
+model TagsOnEvents {
+  event     Event    @relation(fields: [eventId], references: [id])
+  eventId   Int
+  tag       Tag      @relation(fields: [tagId], references: [name])
+  tagId     String
+  createdAt DateTime @default(now())
+
+  @@id([eventId, tagId])
+}
+
+model UsersOnGroups {
+  user    User  @relation(fields: [userId], references: [id])
+  userId  Int
+  group   Group @relation(fields: [groupId], references: [id])
+  groupId Int
+  role    Role  @default(NONE)
+
+  @@id([userId, groupId])
+}
+
+model UsersOnEvents {
+  user    User    @relation(fields: [userId], references: [id])
+  userId  Int
+  event   Event   @relation(fields: [eventId], references: [id])
+  eventId Int
+  isHost  Boolean @default(false)
+
+  @@id([userId, eventId])
+}
+
+enum Role {
+  NONE
+  ADMIN
+  MEMBER
 }

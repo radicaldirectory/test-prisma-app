@@ -13,7 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@prisma/client": "^2.22.0",
+    "@prisma/client": "^2.24.1",
     "@radix-ui/colors": "^0.1.7",
     "@radix-ui/react-avatar": "^0.0.13",
     "@radix-ui/react-checkbox": "^0.0.15",
@@ -58,7 +58,7 @@
     "babel-preset-react-app": "^10.0.0",
     "chromatic": "^5.8.3",
     "css-loader": "^5.2.4",
-    "prisma": "2.22.0",
+    "prisma": "^2.24.1",
     "storybook-css-modules-preset": "^1.1.1",
     "style-loader": "^2.0.0",
     "tsconfig-paths-webpack-plugin": "^3.5.1",

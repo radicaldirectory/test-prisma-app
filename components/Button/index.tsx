@@ -10,6 +10,10 @@ const StyledButton = styled("button", {
   "+ button": {
     marginLeft: "1rem"
   },
+  "@:hover": {
+    backgroundColor: "white",
+    color: "black"
+  },
 
   variants: {
     type: {
