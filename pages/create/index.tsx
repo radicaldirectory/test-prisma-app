@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Layout from "@components/Layout";
 import Title from "@components/Title";
-import TextArea from "@components/TextArea";
+// import TextArea from "@components/TextArea";
+import { DocumentEditor } from "@components/DocumentEditor";
 import TextInput from "@components/TextInput";
 import { Button } from "@components/Button";
 import Router from "next/router";
 
 const Draft: React.FC = () => {
   const [name, setName] = useState("");
-  const [content, setContent] = useState({ content: "" });
+  const [content, setContent] = useState([]);
 
   const submitData = async (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -25,6 +26,10 @@ const Draft: React.FC = () => {
     }
   };
 
+  const handleChange = (newValue) => {
+    setContent(newValue);
+  };
+
   return (
     <Layout>
       <form onSubmit={submitData}>
@@ -34,13 +39,10 @@ const Draft: React.FC = () => {
           placeholder="Name"
           value={name}
         />
-        <TextArea
-          cols={50}
-          onChange={(e) => setContent({ content: e.target.value })}
-          placeholder="Content"
-          rows={8}
-          value={content.content}
-        />
+        <DocumentEditor onChange={handleChange} placeholder="Content">
+          value: {JSON.stringify(content)}
+        </DocumentEditor>
+
         <Button disabled={!name || !name} type="submit">
           Create{" "}
         </Button>

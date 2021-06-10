@@ -4175,406 +4175,431 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.2.tgz#808c9fa7e4517274ed555fa158f2de4b4f468e71"
   integrity sha512-HrCIVMLjE1MOozVoD86622S7aunluLb2PJdPfb3nYiEtohm8mIB/vyv0Fd37AdeMFrTUQXEunw78YloMA3Qilg==
 
-"@udecode/slate-plugins-alignment-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-alignment-ui/-/slate-plugins-alignment-ui-1.0.0-alpha.25.tgz#b9a40044256216dbe5c75d548393f3abcccce168"
-  integrity sha512-CUGvbxc0RNcfjjAfh5tJ/P0Ft0MCGkIi+QJ8KsWEfv8xDruHxJUsFG1aPW92Y0IUGIYnJZgJ2UMPaDOFda5hIg==
+"@udecode/slate-plugins-alignment-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-alignment-ui/-/slate-plugins-alignment-ui-1.0.0-next.39.tgz#a68bb5ff043e2cb3a8d46886cbd4df3e90ae0614"
+  integrity sha512-i1ezRuI+vf8NhrS8QA7HZv6MwAo5WJtX5xaODMNCfwvyxHWhvKS7ToqfXZg3sqmDso6ZBuCUt+oI+72ZSs8sQA==
   dependencies:
-    "@udecode/slate-plugins-alignment" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-alignment" "1.0.0-next.39"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-alignment@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-alignment/-/slate-plugins-alignment-1.0.0-alpha.25.tgz#7a09bb148191ce841cb2d21fb14bad654f8f94f1"
-  integrity sha512-Cj82sqGyMZwNLUCI+ZXQHA+SBov5xYEBtIIN0P8s+XRtoyIKrf1R1jf8SrFu7NyvH/bmRSJXHv29H5kv+4M1EA==
+"@udecode/slate-plugins-alignment@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-alignment/-/slate-plugins-alignment-1.0.0-next.39.tgz#3a27c4770c0ffd97326e9904d850bc32783140d3"
+  integrity sha512-0AhQ3MLaQVVTOBa/WLlemNXEHEJHoF4nLSp2A5xCByvw15PiOWGl3xcFcm1rDplra9GAeyjh4CVDfghS2Qdrfw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-autoformat@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-autoformat/-/slate-plugins-autoformat-1.0.0-alpha.25.tgz#a96d3d22b9cf738913d9769f7571a5968f20b321"
-  integrity sha512-hmLYnVx/ly/3OLI8lxGKu2ubn3/L8Huxm7GBOMkZ+5fXuZeWPyllAkv0+IBBILDb5g+/Wz2Mk8knAuCdJckgZg==
+"@udecode/slate-plugins-autoformat@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-autoformat/-/slate-plugins-autoformat-1.0.0-next.39.tgz#3834047e43b76b3a23d73ce3d7aa4abc8658d092"
+  integrity sha512-TA5rUQ9f2yXUXGDEbI+jHn6WBJ6cKm2HffxooJNmGQQ0rrZtvKPGhDrjjul7ThJ0fnpy2K3Ng5LXzz7ILnMxOA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-basic-elements@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-basic-elements/-/slate-plugins-basic-elements-1.0.0-alpha.25.tgz#a8a5f95292ef009bd887bb290f193edfafa09c82"
-  integrity sha512-2Ll9Ii/92sWgNdI+7CdD3vFM2VPw88Y07pQiNbTi+Yl1l59nDGM6jFRwk4d07jPbEKZ2Jbh4yDh/PiqBANmJOQ==
+"@udecode/slate-plugins-basic-elements@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-basic-elements/-/slate-plugins-basic-elements-1.0.0-next.39.tgz#ab11db0daaa38adce1ea19659d47c19f7c83dd87"
+  integrity sha512-OfK+e9RNteu168deuD+2XlWiTsMuYZ9XlTwfuj75qpw+BwRfFi2LdnYerKT0KaWTM2x4xUh8PGCFfbdY3iH86g==
   dependencies:
-    "@udecode/slate-plugins-block-quote" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-code-block" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-heading" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-paragraph" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-block-quote" "1.0.0-next.39"
+    "@udecode/slate-plugins-code-block" "1.0.0-next.39"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-heading" "1.0.0-next.39"
+    "@udecode/slate-plugins-paragraph" "1.0.0-next.39"
 
-"@udecode/slate-plugins-basic-marks@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-basic-marks/-/slate-plugins-basic-marks-1.0.0-alpha.25.tgz#025ed2e38e474aa34dc135192d6725dbca273e63"
-  integrity sha512-kQT8ibCLWrA6DO8d1iJvu1W4NzTosDpZe+YM7viQDoPw0/oSlKleej9dzlXndPzQSuVCGEbyLxovEdfAHCsRgA==
+"@udecode/slate-plugins-basic-marks@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-basic-marks/-/slate-plugins-basic-marks-1.0.0-next.39.tgz#3e2b2a30b8c34b2c43697c9a5616761ea7703a8b"
+  integrity sha512-fHIASfIsTe18TqlUva0PrGy3e7974Q3PQGUOnxDGMMSem4TstvmSB/XeYwQxkAEDsHnpYcS1jXQrGjGK3nvXRg==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-block-quote-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-block-quote-ui/-/slate-plugins-block-quote-ui-1.0.0-alpha.25.tgz#9e6978e8b5e2594cd8d0866f1ebc1572d3b49b1c"
-  integrity sha512-udAXhTAy/VyN+NCUkiB77AamrEYgO5AQs3hbaRmgcEheEbWwKyd4SNTGCtcfJClyTM8fgREGNEfLPw02Jjmr0Q==
+"@udecode/slate-plugins-block-quote-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-block-quote-ui/-/slate-plugins-block-quote-ui-1.0.0-next.39.tgz#34f60728fe93590c72b334b0c5757a28653db2b7"
+  integrity sha512-VNHBqr2s2fwcAfQKKvGHhMSMYrBKhm3JEjqx7g/BcnME4y03bKlQXEAe+pV+JEezhBiHejxEIojb6lLaZfSgIw==
   dependencies:
-    "@udecode/slate-plugins-block-quote" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-block-quote" "1.0.0-next.39"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
 
-"@udecode/slate-plugins-block-quote@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-block-quote/-/slate-plugins-block-quote-1.0.0-alpha.25.tgz#112aa4ea3e52c87960656af97e4d2b73a380cf2e"
-  integrity sha512-GjoeBT8xKOMqR3/0KlYuolxssAA+Z0+glz2xtpy8MDM4jxTl0jLPuO45dKhVsR4I2r+W9mEAQdAiBwaU6s5LSQ==
+"@udecode/slate-plugins-block-quote@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-block-quote/-/slate-plugins-block-quote-1.0.0-next.39.tgz#b9ef2ad0bc9426dd376f01c50f2bf58461f7258a"
+  integrity sha512-0QZ6O2iNqzsq7wwGcV9w9j16OFsLEiiHm3gfuKU2b5qp4HW6h/piIfB0peKLQpbZ3iYQoJ/770wM1xp/nUQbTA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-break@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-break/-/slate-plugins-break-1.0.0-alpha.25.tgz#c18a5c041e7d40753f1fd5fc9c157276a12c926b"
-  integrity sha512-KjjaNsOthqPfSmy4P+jjSRfXvbsUZIjr7/zeacKHljAuwJdau7/d3bGOoOpcc1i6+P2aCEa/nDmaxMDfeY6xng==
+"@udecode/slate-plugins-break@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-break/-/slate-plugins-break-1.0.0-next.39.tgz#3814b2501f15517926fed3af3229d9712d12b8ce"
+  integrity sha512-tNiEcyD3H+0fKbkg0dotp1ywgCTRKwZrHGXLypuIOGdTloJNbxq6XJJ7ljqc7BKQafkvi3ewg9PTquyPTbD/rg==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-code-block-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-code-block-ui/-/slate-plugins-code-block-ui-1.0.0-alpha.25.tgz#eaddf098740cde8d42772598eec5f946792a06da"
-  integrity sha512-IV7wRBRu22vGRWOPotkmyxn3pQHbFaiadlAcEmGDcK8wUZlHywhHLln1XRdpRIF4ArSGrr7/q51mPxnVpUlGqA==
+"@udecode/slate-plugins-code-block-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-code-block-ui/-/slate-plugins-code-block-ui-1.0.0-next.39.tgz#ec0d3fedf2f2aadca911c2573462e95a0b430cea"
+  integrity sha512-0IbRDVkEtemsK9H0h6UFe2blu3G9rIMtWzH6wcNDIuk7wzsdGjD+JHLRxQVZHO4A8GiCgXK589G9VnbUGmjalA==
   dependencies:
-    "@udecode/slate-plugins-code-block" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-code-block" "1.0.0-next.39"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-code-block@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-code-block/-/slate-plugins-code-block-1.0.0-alpha.25.tgz#f91a6c6b522f2a5bf400caa2b63d2066a0a10701"
-  integrity sha512-VVX8bWYeEvRtmt2pOaOWlgbMgiFfookJjZJXICOlgDWHtiaO3G3I+ZaCcgDdkKETFljTobI+4b9YS8cQT3jrbg==
+"@udecode/slate-plugins-code-block@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-code-block/-/slate-plugins-code-block-1.0.0-next.39.tgz#c21e5813d026ce571d341e426fb389c7cb692600"
+  integrity sha512-HqF3Qr8PeRQd0eJM+/PrxLg4Et5bBk2eunyUMIHyJL2YpdbxOMF0dAMpU6pDIeRfqwJNFOPSXuVvX+Gvk+gnbA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
     prismjs "^1.23.0"
 
-"@udecode/slate-plugins-common@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-common/-/slate-plugins-common-1.0.0-alpha.25.tgz#ccadcacb6de06189d744f2fa42acca4bcc81563f"
-  integrity sha512-tiyXH5z3rwQM7zswfwW9aOKx0yt577+H8SN6cqrEH2yeEA1D3xSQ0CDqNc+tps58rTaJU+I0x6ogdMJ4alJD7g==
+"@udecode/slate-plugins-common@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-common/-/slate-plugins-common-1.0.0-next.39.tgz#507c03207176fa2c392387793546347089289e97"
+  integrity sha512-1j49wE1/J3tBvKwAeTBrCIbveaWf5lDU97xN3Uybd4h0y5kJpUv41ZLIvxnLbFxLUXUwSOcPrg8kYHG5J1fhTQ==
   dependencies:
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
     is-hotkey "^0.1.6"
 
-"@udecode/slate-plugins-core@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-core/-/slate-plugins-core-1.0.0-alpha.25.tgz#e49f6539f07addf6765fb2ac75dc5c50a76ca056"
-  integrity sha512-54MdrMJ2qgJSBoKCGxeH5RZeVJJZHv7Eo6qgUizsr1rzCduQ1zzdgSSJi63mgvpE2ieRqSF+fCNxXo4AK3cNvQ==
+"@udecode/slate-plugins-core@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-core/-/slate-plugins-core-1.0.0-next.39.tgz#26b217e3c735f45e0a8374c3ce96f053a7eed14e"
+  integrity sha512-5q+aStCT5UcRYfvqhblApnEPzinLOTZ4hco19hSmDJbBtjdzJndLSI+4BZO2x2uvRJj0LS90HyWM9zCjqc6ayg==
   dependencies:
     lodash "^4.17.21"
-    zustand "^3.3.2"
+    zustand "^3.4.2"
 
-"@udecode/slate-plugins-dnd@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-dnd/-/slate-plugins-dnd-1.0.0-alpha.25.tgz#d758c607af9e7bf46f0f042dec58c3f30c8800d7"
-  integrity sha512-JW31HrzE0vYFm5K/N1xnB2z8R47hhDkp6xfG4NjAqgQES1B4+H8f+/6PEJgjEJZZSln7vlJ2VkBL7Tf5gJoWxQ==
+"@udecode/slate-plugins-dnd@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-dnd/-/slate-plugins-dnd-1.0.0-next.39.tgz#bb801f16770ecd5d298e3b2a66d8b8a37fce114d"
+  integrity sha512-sFijkyYdZ5pxF0Wb+1knp5reG1szyzAAviEZfnhIb2SX934kTG+kE1o9OSGSekL6D6MKg4OTDRBGQQyzTFDRUA==
   dependencies:
     "@react-hook/merged-ref" "^1.3.0"
     "@tippyjs/react" "^4.2.0"
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
     "@uifabric/styling" "^7.18.0"
     "@uifabric/utilities" "^7.33.4"
     react-dnd "^14.0.2"
     react-dnd-html5-backend "^14.0.0"
 
-"@udecode/slate-plugins-find-replace-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-find-replace-ui/-/slate-plugins-find-replace-ui-1.0.0-alpha.25.tgz#c20ddd3861c96bbff6ab834b9bd11c709855044b"
-  integrity sha512-tQLaUhWt3WEYf39f9OGSBPdYFqWvXCjflpVkpENNgxiwqlBpS47M3omyCph8+Xz1tA9OZz/NsjP/BCACQyKF0w==
+"@udecode/slate-plugins-find-replace-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-find-replace-ui/-/slate-plugins-find-replace-ui-1.0.0-next.39.tgz#b3b1b7cee146f1b85a5f2867a7470af9f67f4994"
+  integrity sha512-seI1DvQ5i49ri/rYAgDBvT4WPgYRMKOhTb6nu81O8nl3V2jrGJ7BC6vc1GnEhPBe9xCbZAwC6pyrPMhRluZIVQ==
   dependencies:
-    "@udecode/slate-plugins-find-replace" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-find-replace" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-find-replace@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-find-replace/-/slate-plugins-find-replace-1.0.0-alpha.25.tgz#867ecb04461214578622b7883aa21f6fb78356fa"
-  integrity sha512-yB5jmZOZRF49Yo7hxjXDXMg+LgxqjdlJj3vMRNall48iOV0TOh5KpQMjYYT+lGXPdnUd3IGuOdBCNHE7LFn06g==
+"@udecode/slate-plugins-find-replace@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-find-replace/-/slate-plugins-find-replace-1.0.0-next.39.tgz#c86250e154ac0b5908293c0c8ace20b59f8f2c88"
+  integrity sha512-O/u1ocYqX9Kl9Ru7lRZUCPTXVhYW4ABS/dtLakUXP8e57zmXwaRMDrAYQZ2Kb0I2oyAVY0dRKkOTM1MiekHgVw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-heading@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-heading/-/slate-plugins-heading-1.0.0-alpha.25.tgz#18303290a17f0334dd53193609c1764400facb88"
-  integrity sha512-XSQqQzvyWdWh8SEdlPv2gtVG80gWcYHo4FWFbiVbbgPGzCYpVftXxPL09N4DZdEr7zyNM2KCexsDyBkHTSOrSw==
+"@udecode/slate-plugins-heading@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-heading/-/slate-plugins-heading-1.0.0-next.39.tgz#9b79b35337839fddba418038d2f203dceef9dcc8"
+  integrity sha512-NV3It8XDWJUUQv3xoMOkS0JRftrI/xZhVUhwgV2m7Qze/J5v0Cr3VJe2mu8TD+gFqJifURuFVUOlBEo+Buz+EQ==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-highlight@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-highlight/-/slate-plugins-highlight-1.0.0-alpha.25.tgz#6189a9fd5cbce5c051fc2e6976f22fd0325e98eb"
-  integrity sha512-ffL0LhkJj0i1jMCPiLPJhPbR3pwDEVpBb40eJtiNtTCJhvSUmoi0DNH0EQ+uouOKJrXGf273tHpWEFDciVIxLg==
+"@udecode/slate-plugins-highlight@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-highlight/-/slate-plugins-highlight-1.0.0-next.39.tgz#2e63e3d82776cd3824c57e22cdae6dd82b1b20ce"
+  integrity sha512-sOS3jYYQ4R5AD6Rxn8hIkZIB9rkP6WJbtT3IRurCrnKmQp7EusyBJhNw3CXGq5po+h+YbwEVMbOpBJccT748kw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-html-serializer@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-html-serializer/-/slate-plugins-html-serializer-1.0.0-alpha.25.tgz#2b91a5f57c7dbc05aaa587efe04438cbb9fa28b6"
-  integrity sha512-t0n1coXm4pgSTNUfMaDnLKOQiLuMs+Ip9eYmTzCdH4z7VVB0CIZd81qFAWZv+WIZeMEjxLTMNW/SFdectnzw4Q==
+"@udecode/slate-plugins-html-serializer@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-html-serializer/-/slate-plugins-html-serializer-1.0.0-next.39.tgz#69633e3e1fe81ef4062d3dccbb24f5ccb9fcf514"
+  integrity sha512-1saHeNmHbOPag4pQYejTat21pZYUa3oOH2Dsz4wRZMUx9c+DqUGau4x38mR6mz+eaGdcZDOkkahHsotFUBHGfA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-image-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-image-ui/-/slate-plugins-image-ui-1.0.0-alpha.25.tgz#baebf19f850b36294ed6b6ff52a5b78f039b017b"
-  integrity sha512-p2/Ur7erTsENWuW5IQGDu/k8yuVa0ypEPwBDIy5IGDl4brIK2FYQKuwqDsguvaqvqodJNmPFtixTcWDZ4iNEsg==
+"@udecode/slate-plugins-image-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-image-ui/-/slate-plugins-image-ui-1.0.0-next.39.tgz#c415830bcb06fd1fcb5a1f458c13b64af37fe908"
+  integrity sha512-BLdGuzOGPdYD4SfWbuXfs4+jh1hkSjbG2l/SMHVn4U0bGLjqslZelIez2MzdY4/saOG8xPfiN/NSYx6W0wxK7Q==
   dependencies:
-    "@udecode/slate-plugins-image" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-image" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-image@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-image/-/slate-plugins-image-1.0.0-alpha.25.tgz#4ab7b89916fbfeaab7cd864f32faadf1ab3f6edd"
-  integrity sha512-bvfPAIATSHvpK+cUhsN/N97SUEs5ek4cOD6JgojOE2RqCqxBBuj0rl/7aAapEVgS7KPusrgHwjdSH2eoKdeexw==
+"@udecode/slate-plugins-image@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-image/-/slate-plugins-image-1.0.0-next.39.tgz#7d75d9f870dac636e12ed577cdb078451ae675ab"
+  integrity sha512-NCCo9JDPElDJugmO+Mw0lQZUmkmz/KEoQy7qkAECmHSEmWwuvv5rHuZGPOd9dieH0Zeqk4HgkmkIAt3ZbjeWTA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-kbd@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-kbd/-/slate-plugins-kbd-1.0.0-alpha.25.tgz#cb40bbb5791720ef01d829400254cffbe7472115"
-  integrity sha512-G5dhr59TfS67vTdqPuKGr/bkHjWRnlO5N83PCTwadDRG/lml4Ue27cKOD1WyVspQ8dYJJTCNELZC6ja+9eXhww==
+"@udecode/slate-plugins-kbd@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-kbd/-/slate-plugins-kbd-1.0.0-next.39.tgz#2dc1269b2b3fd3167e8f25dc48fc96f52609887b"
+  integrity sha512-SO+rcWsV/xS1NUZgg/ewoqp1XkAvAiUVfj8I7vwbe8WRRzKh0pWPftYOTe0IvAn9JvLY2cmRTA118afrmoO4dg==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-link-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-link-ui/-/slate-plugins-link-ui-1.0.0-alpha.25.tgz#e5bec10e4c50fdfc3c8d1b6c4651aa1e9dcd91ae"
-  integrity sha512-bqTlVsxy/pF9G/+EUBiHfvQlIhI5e+LbNJ9c+HUskBeMIKJD0D3jXYpkRd8C8EVNgq7nM7JaQRL0vNaXy9op2A==
+"@udecode/slate-plugins-link-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-link-ui/-/slate-plugins-link-ui-1.0.0-next.39.tgz#824b659d55c7da47280a9dab86c1ff22e4c02e42"
+  integrity sha512-85LVgzLdTVNkMJ9LkSvaQHfmFgEmPzFmstC9FQhS/dmDQZFVMkpf8J7F65jYlK1YSJBBdSIqE9qteF6tf6sKiw==
   dependencies:
-    "@udecode/slate-plugins-link" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-link" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-link@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-link/-/slate-plugins-link-1.0.0-alpha.25.tgz#0959dccf1a30ead52eb7f03a98b5f8d6eeeb5b47"
-  integrity sha512-A7AQNUYAfJarvC7Bb9jeKcNiE2mgbaV8OiZSJKMcU+obXznEFX4J3TeOyr1QKX0pjRzbMp6IMoVdBscpZuxINA==
+"@udecode/slate-plugins-link@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-link/-/slate-plugins-link-1.0.0-next.39.tgz#50d05938dbdc39bba308e9416ae13f7df37cc529"
+  integrity sha512-ZOabGP0ARimLmH31n3/dpS8IZbIA7jg9tz9Aog+EfpZh6LVSnC6KM5qi9BwgjrNK/nJQo9xJ4imOVsmRAzYRmg==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-normalizers" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-normalizers" "1.0.0-next.39"
 
-"@udecode/slate-plugins-list-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-list-ui/-/slate-plugins-list-ui-1.0.0-alpha.25.tgz#57a3e21d7753f7daa0f68021163bf271fe59d637"
-  integrity sha512-jzvn8fDg9BvE2B2UJ2Kzaqs3SKVYp3KEsBcXokZIfoNCegj7LLdTHY3bfq9XuzjWoULdRTAERljaawYIXPaGig==
+"@udecode/slate-plugins-list-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-list-ui/-/slate-plugins-list-ui-1.0.0-next.39.tgz#8f5aa6a9fc50db89a036aacb7c7ca3979723b59b"
+  integrity sha512-aJSs4H5oTYd85ssRVLcUUNB3KK4hXYh7MPAd6eOTvjDsu/0/bwXnVsE59O0me0Gq/qk8agQ4AA0+M7tF2crABA==
   dependencies:
-    "@udecode/slate-plugins-list" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-list" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-list@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-list/-/slate-plugins-list-1.0.0-alpha.25.tgz#e894aa0cdde5060dd3f3ab62d5715e9abfa3f79f"
-  integrity sha512-wOSNPzBYlP8YG7GT0+4G316hbaGMS49YHybpfxmGnDmIRRsGKNTithjUFDfNubzZYG2ZTKmGO44/ACI6/mYq5Q==
+"@udecode/slate-plugins-list@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-list/-/slate-plugins-list-1.0.0-next.39.tgz#f75b4f0b06d5cd4ba40485d056ebfa3e171234fc"
+  integrity sha512-08l6k5VvCk9FwyeN/XxeusZm+Q5bYdNJuSHp2nihO7zsd1a6yQOrREhmHmbRguTEqMiFKDeDsNHvxMu3HPrkxw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-reset-node" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-reset-node" "1.0.0-next.39"
 
-"@udecode/slate-plugins-md-serializer@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-md-serializer/-/slate-plugins-md-serializer-1.0.0-alpha.25.tgz#55a088d0d8966b18c478f034a9afab672dfabc00"
-  integrity sha512-obfpS+IZUWMMAKk7CaPkrtPXrsXArQ0rsxILDqAMl7aQcPDzegDA3fLuiyjos1XxnvgwG5Z4Rnu52S0fhn4QTQ==
+"@udecode/slate-plugins-md-serializer@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-md-serializer/-/slate-plugins-md-serializer-1.0.0-next.39.tgz#26d3be1eb1f1915d981da724131864b72c294245"
+  integrity sha512-+zHstNk7QsYjnDDHZdbHqTHdO/TEveEdlToGN+w1ZaMyaRO9ipRZr/gD9z4/eJKP1Wmh+1HbY6y4L7Qj6ERBbA==
   dependencies:
-    "@udecode/slate-plugins-block-quote" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-code-block" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-heading" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-link" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-list" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-paragraph" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-block-quote" "1.0.0-next.39"
+    "@udecode/slate-plugins-code-block" "1.0.0-next.39"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-heading" "1.0.0-next.39"
+    "@udecode/slate-plugins-link" "1.0.0-next.39"
+    "@udecode/slate-plugins-list" "1.0.0-next.39"
+    "@udecode/slate-plugins-paragraph" "1.0.0-next.39"
     remark-parse "^9.0.0"
     remark-slate "^1.4.0"
     unified "^9.2.0"
 
-"@udecode/slate-plugins-media-embed-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-media-embed-ui/-/slate-plugins-media-embed-ui-1.0.0-alpha.25.tgz#d6a32695c2e4454806ec020f99b96bf222a5c6a9"
-  integrity sha512-x4s+UI/S8zeJCmbOiMPOQ5nal6g3UfbOoLwsh/XI3sjcfOlPZyFTgK64aLKbCr8lZPYiq7T7VOPLBy6gSoiuiQ==
+"@udecode/slate-plugins-media-embed-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-media-embed-ui/-/slate-plugins-media-embed-ui-1.0.0-next.39.tgz#ee8c39dc0d56fcc0f65196eac074b8099a677412"
+  integrity sha512-b8uC/MGaqEj1Ymoc0OwthaElI7vj8LrG19Sy4VFeH2dzaLs5QBYHHyTYyIKVFLWhNHW1NQCD1aEsZ71Jsw8ZHA==
   dependencies:
-    "@udecode/slate-plugins-media-embed" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-media-embed" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
 
-"@udecode/slate-plugins-media-embed@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-media-embed/-/slate-plugins-media-embed-1.0.0-alpha.25.tgz#ad36d9728041b1d7359bed876fdc0353dd34863b"
-  integrity sha512-SXW+zKe8/awrXoFLlZ/2m5qz00kzobnFe766a2KIKtyN1sRl7+shb3ua3vbHS+gvRmSyvzdvdzAk85ZwnBJ1Aw==
+"@udecode/slate-plugins-media-embed@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-media-embed/-/slate-plugins-media-embed-1.0.0-next.39.tgz#9d858f3ad0a2af540fa222f4b1c85d4d1e62dcd7"
+  integrity sha512-OW6afc0Fps2JbXVAwjGo1ReM72SsscKu4y3aD9y5MDczXRKIGtRTF8+5s37eLNCXLyfQSgEAXiK+lykW8IwSiw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-mention-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-mention-ui/-/slate-plugins-mention-ui-1.0.0-alpha.25.tgz#0c9523d73feff1fe268c4484b6967674a68e999c"
-  integrity sha512-Y8TilDJaVoOXLLCGBN4XTduPResCZ9D/wDAbz1UthF4b96zCWPQtECqaQaTuwu8AO+zv1tdkzFJe24lO09VeDQ==
+"@udecode/slate-plugins-mention-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-mention-ui/-/slate-plugins-mention-ui-1.0.0-next.39.tgz#514f67722c8c2f564a37813b58da8a18589ddb58"
+  integrity sha512-MAMWBZqomIOdOzyMWiAhuEuz8WsgpczONRZA1kKIbnZkyboYKdDXhall4G46EnO8iguCm/M4lnTMXtFHfm/1MA==
   dependencies:
-    "@udecode/slate-plugins-mention" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-mention" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
 
-"@udecode/slate-plugins-mention@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-mention/-/slate-plugins-mention-1.0.0-alpha.25.tgz#43c47ab98128c1dabd64d6f3005a608e8cd1d103"
-  integrity sha512-5GcHc2/xKOBzq9AJsk+Fips1FRC2D56EtW7f+Xxp4P1mXmv3ZqcuQDEs75R8XThtluI+EMG9LviAnRpNJto1dg==
+"@udecode/slate-plugins-mention@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-mention/-/slate-plugins-mention-1.0.0-next.39.tgz#4ae7f0441cec8413946cfd74fb116c07bed51401"
+  integrity sha512-M/Wn6HecayDfsOaMhBZBQkl2c4N+cfKh3S5ieV+YluMb5oBRhzjhprjP17Z+sc83SZ26bTEP9qNtslcvUwe96A==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-node-id@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-node-id/-/slate-plugins-node-id-1.0.0-alpha.25.tgz#9e9e0296598f19457be22ff4a1963e53ef0c833b"
-  integrity sha512-Sk2GUwS4SWaR0DV8lbglawLcvIDxlUpTf1HDQazl9bCaTMEQfnn8ciYRKAUosYrGw5kTNHc3j/f0+9bGl44nhw==
+"@udecode/slate-plugins-node-id@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-node-id/-/slate-plugins-node-id-1.0.0-next.39.tgz#7e014119c6466781b6fbc6807fa595189c481a4e"
+  integrity sha512-lNYRgZo6vM8/E1bBpzfB7K6LoDmY2jbIlJEaIt67mSjj6PTOiFpdVNsXRb5InC3L79z25B7WOYGdwH0QNDr5CA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-normalizers@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-normalizers/-/slate-plugins-normalizers-1.0.0-alpha.25.tgz#229b57dd4686a465567a2ee5999572cd6988d41c"
-  integrity sha512-EwlI00A/Tw3Z3I9w7M/DQphRGGqzdjyRecxROAXrZbHJo4pxJt9/NXGOZ3tkmfvyxQnz8Dxq2/8MyqcyvNf6Zg==
+"@udecode/slate-plugins-normalizers@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-normalizers/-/slate-plugins-normalizers-1.0.0-next.39.tgz#689fb01e7533eaaf210dd87d772eb74a56ab5d68"
+  integrity sha512-fGoAzZwcgrhRLeP0jNflDurffb9e/6QzQw/nN5tUTtrW/np2nEqI3sEByJdPOGOp6dmANykPAHd3vTUptGo5MA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-paragraph@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-paragraph/-/slate-plugins-paragraph-1.0.0-alpha.25.tgz#bcb36021b20af4c8ac7d658adc01ff061eeb6eec"
-  integrity sha512-DGVFOhyxhu3P8yAfRCUl3dIEevYJEnRTpwqH9aq4S0TURUEG0FiumrXJKiY625f16R7M98HpVe15Xp01RT21qg==
+"@udecode/slate-plugins-paragraph@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-paragraph/-/slate-plugins-paragraph-1.0.0-next.39.tgz#9ed30d0c07ce76a1d3be1f55a52cc5b053233b9d"
+  integrity sha512-4TH9SxW31BvK2rdWF54rfe2AEuAY4j1c9WQVCPhwccvD/3dbi6kyCFOaYebFuR6VaMz/h0QFtgKoAGALgVPm3g==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-placeholder@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-placeholder/-/slate-plugins-placeholder-1.0.0-alpha.25.tgz#b3d860b9a5a297dccbba99fe99d9d220baafc1a2"
-  integrity sha512-tG1Vw0ioulgnPd1kZoDxJhqUoAcDpFL1vDCMl9IUmCcuTo3ycQQGuXSFJLBYIQaYDomBsxUxrRpjPaCFwRtUyQ==
+"@udecode/slate-plugins-placeholder@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-placeholder/-/slate-plugins-placeholder-1.0.0-next.39.tgz#d467bffbbaee9caf836a81e1b42dcc6ec5df14e8"
+  integrity sha512-9ksjPBtwF+2ZT1wJwx1wBDALMwom9W+45UMQV0VSnRdAHv9GT8eG2gVcCVmzpY/9WEmp+H0QYu8ZuiqLqCAuiQ==
   dependencies:
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
     "@uifabric/styling" "^7.18.0"
     "@uifabric/utilities" "^7.33.4"
 
-"@udecode/slate-plugins-reset-node@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-reset-node/-/slate-plugins-reset-node-1.0.0-alpha.25.tgz#e0f3667f06e4bf49e86837c0522a96b6373fa062"
-  integrity sha512-G6BxAVhBtPjNpqCqYsxb7sfy59kOHMUXlP6EZwDc06/pGmIvDa15qWFWOvV1uZ5l8a/DDUn7se07MFmEiNRJwQ==
+"@udecode/slate-plugins-reset-node@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-reset-node/-/slate-plugins-reset-node-1.0.0-next.39.tgz#263aa194db3af73b634efd9ef5199f4257ce5b95"
+  integrity sha512-5anCCA/27OqwHRiyw2BqiPEojBmRx3Eiq2HgFMnXlGcOPGozajQvKU+6YcFg0LhpQRwuwpOyemojMM2ByrW5IA==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-select@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-select/-/slate-plugins-select-1.0.0-alpha.25.tgz#ac375114c30912d017afc7f4e2b66640446ac497"
-  integrity sha512-WyLGgyV0j1eqMedGkIi02rmnDYkDl5E9wbWM/FjUNAUiDlt9n4BphB6vHRC5Zq/xrUhcC3vLR16hqII5fhNRHg==
+"@udecode/slate-plugins-select@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-select/-/slate-plugins-select-1.0.0-next.39.tgz#cb8929bc06dbea9427fec0beeebc049c6a7104b2"
+  integrity sha512-pCMZAxwgrj8XgvmwYFHpEuUJnq7nDQCorNTebkUk30a74tYgV76Sfzpb3464E4b1PVIbLlmmX1Eebme57Z6LFQ==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-table-ui@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-table-ui/-/slate-plugins-table-ui-1.0.0-alpha.25.tgz#e85a169fede82f6b29e008a6a606355c21066e87"
-  integrity sha512-1jWZKaiaUJA5v0pjeohHC9eQ5FDGK8VPUXYAY+NAhQengq2EBe7mheEchocB9rUk0Y6EjwVqv3zF2RTd7/WHnA==
+"@udecode/slate-plugins-table-ui@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-table-ui/-/slate-plugins-table-ui-1.0.0-next.39.tgz#e56ebf02445b30b6cd5c1d84618db7d8df7a69c5"
+  integrity sha512-ydvoy0NuQF+8EPzY/HvcD/sMFiLEKADIXWHvsPzZgvIwiudNrtYsobatQp/uOB3T3+yaTzLeizf7PdBsAIiq+g==
   dependencies:
-    "@udecode/slate-plugins-table" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-table" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
 
-"@udecode/slate-plugins-table@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-table/-/slate-plugins-table-1.0.0-alpha.25.tgz#cccdcf07c7e96bda75c3a7ba4422532b15b283fd"
-  integrity sha512-pYYz4K7MsG0enmVUTAY5TZeATsEY6Y/BhpTP1EYeRBD3ZR3fHBjOj2yk/xZOhgVHJPZKVSd3SwWVQbvySHcGqw==
+"@udecode/slate-plugins-table@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-table/-/slate-plugins-table-1.0.0-next.39.tgz#f7c06e5a6cc5a9a4a7d8c7cc54627f09eb855064"
+  integrity sha512-cixyt2ZrfSBj+w9TjMEpDMhwPVTJT3abSIGUsAbCDfxvJ9J54mqfNGO+gbHOUXmcinpKSNJvL/dvk46sHzLryw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-toolbar@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-toolbar/-/slate-plugins-toolbar-1.0.0-alpha.25.tgz#bea78ca65c2fc4cc3de8d97f6babf1aad0901e14"
-  integrity sha512-RVu7Ig1bDMQi6vsKHGRgY0YYptlfUM/hYLDnC5J6devmSSKTA6NupU8rhGDap2K5R85yy/xchZbySJNQXzD+GA==
+"@udecode/slate-plugins-toolbar@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-toolbar/-/slate-plugins-toolbar-1.0.0-next.39.tgz#25f0adb21b5f0f99cd504934c126bcb2e97f3a94"
+  integrity sha512-Oh4J5OTXxjRKVgrJbLgfMz9Snw7g3hQAmhiod9DDNNRvL2Eybr2TrODLU95fwgly+cxGCikr1dbM7Cpn3lTmcA==
   dependencies:
     "@tippyjs/react" "^4.2.0"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
     react-use "^17.1.1"
 
-"@udecode/slate-plugins-trailing-block@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-trailing-block/-/slate-plugins-trailing-block-1.0.0-alpha.25.tgz#026c66826a96da31cf0ae46f263af16802ca96a4"
-  integrity sha512-bxiqpt+/3lJOv2FzKv/34G22VmSTJ7apOTN/CmpDzQS1A4oSDQXZ3Q5DRrYJvTqhf1EXjhZ2At/dSOa7c2tpWA==
+"@udecode/slate-plugins-trailing-block@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-trailing-block/-/slate-plugins-trailing-block-1.0.0-next.39.tgz#20bc9f7999477b64f401fc65cb4bfbb37a752920"
+  integrity sha512-SvJqrbBRijoUe3BZN9gPIoiVfp80Zq+FfNWL4+n0gGHHtCJa9rH/SS9aafCH9bePXnIE81oQAOlhX/06818Euw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
 
-"@udecode/slate-plugins-ui-fluent@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-ui-fluent/-/slate-plugins-ui-fluent-1.0.0-alpha.25.tgz#676281548a0a9d3f48500f79a1205789581f210b"
-  integrity sha512-a7El8/gwHntt5FWpAkm24bfEM3vN0GnMEwaBOBoHxlGsYzZeftjabciBXAkoTgsPGXJPBOIixfrOtzk3NUmXFA==
+"@udecode/slate-plugins-ui-fluent@1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins-ui-fluent/-/slate-plugins-ui-fluent-1.0.0-next.39.tgz#31ed5e7068880b6aaf5ea3fff9d70e4558fdcfa0"
+  integrity sha512-XfWkmQTPQdNov7RC0soS7INmYaenDRhoFAaf/4fr0RvXkiYtjgYfdykCEdvAbXN45FLsxVgEXB+qyOzaSEtmIw==
   dependencies:
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
     "@uifabric/styling" "^7.18.0"
     "@uifabric/utilities" "^7.33.4"
 
-"@udecode/slate-plugins@^1.0.0-alpha.25":
-  version "1.0.0-alpha.25"
-  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins/-/slate-plugins-1.0.0-alpha.25.tgz#97689dfb26a7554a1abee2a48bda5c18cb6c1bae"
-  integrity sha512-BB6ebq0u/LYWnKZRbY6Fe/5hqz99/sPcoDciNnUejfvji7zs9s0X4oIDEgE29F7gt3rBGWYGdUfSJd44xQ6WLA==
+"@udecode/slate-plugins@^1.0.0-next.39":
+  version "1.0.0-next.39"
+  resolved "https://registry.yarnpkg.com/@udecode/slate-plugins/-/slate-plugins-1.0.0-next.39.tgz#eda9c8e50aad829567f580e9e3190a25b274be31"
+  integrity sha512-hcuskr9fGuieWArrvuEDOqh/zD7CNWoZAP0nINkOYHPl0ZZw+2ZQ7AT0ekfLAiVMLqDBOo1AMVppcOyal3psyA==
   dependencies:
-    "@udecode/slate-plugins-alignment" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-alignment-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-autoformat" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-basic-elements" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-basic-marks" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-block-quote" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-block-quote-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-break" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-code-block" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-code-block-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-common" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-core" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-dnd" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-find-replace" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-find-replace-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-heading" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-highlight" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-html-serializer" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-image" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-image-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-kbd" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-link" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-link-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-list" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-list-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-md-serializer" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-media-embed" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-media-embed-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-mention" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-mention-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-node-id" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-normalizers" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-paragraph" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-placeholder" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-reset-node" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-select" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-table" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-table-ui" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-toolbar" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-trailing-block" "^1.0.0-alpha.25"
-    "@udecode/slate-plugins-ui-fluent" "^1.0.0-alpha.25"
+    "@udecode/slate-plugins-alignment" "1.0.0-next.39"
+    "@udecode/slate-plugins-alignment-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-autoformat" "1.0.0-next.39"
+    "@udecode/slate-plugins-basic-elements" "1.0.0-next.39"
+    "@udecode/slate-plugins-basic-marks" "1.0.0-next.39"
+    "@udecode/slate-plugins-block-quote" "1.0.0-next.39"
+    "@udecode/slate-plugins-block-quote-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-break" "1.0.0-next.39"
+    "@udecode/slate-plugins-code-block" "1.0.0-next.39"
+    "@udecode/slate-plugins-code-block-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-common" "1.0.0-next.39"
+    "@udecode/slate-plugins-core" "1.0.0-next.39"
+    "@udecode/slate-plugins-dnd" "1.0.0-next.39"
+    "@udecode/slate-plugins-find-replace" "1.0.0-next.39"
+    "@udecode/slate-plugins-find-replace-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-heading" "1.0.0-next.39"
+    "@udecode/slate-plugins-highlight" "1.0.0-next.39"
+    "@udecode/slate-plugins-html-serializer" "1.0.0-next.39"
+    "@udecode/slate-plugins-image" "1.0.0-next.39"
+    "@udecode/slate-plugins-image-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-kbd" "1.0.0-next.39"
+    "@udecode/slate-plugins-link" "1.0.0-next.39"
+    "@udecode/slate-plugins-link-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-list" "1.0.0-next.39"
+    "@udecode/slate-plugins-list-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-md-serializer" "1.0.0-next.39"
+    "@udecode/slate-plugins-media-embed" "1.0.0-next.39"
+    "@udecode/slate-plugins-media-embed-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-mention" "1.0.0-next.39"
+    "@udecode/slate-plugins-mention-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-node-id" "1.0.0-next.39"
+    "@udecode/slate-plugins-normalizers" "1.0.0-next.39"
+    "@udecode/slate-plugins-paragraph" "1.0.0-next.39"
+    "@udecode/slate-plugins-placeholder" "1.0.0-next.39"
+    "@udecode/slate-plugins-reset-node" "1.0.0-next.39"
+    "@udecode/slate-plugins-select" "1.0.0-next.39"
+    "@udecode/slate-plugins-table" "1.0.0-next.39"
+    "@udecode/slate-plugins-table-ui" "1.0.0-next.39"
+    "@udecode/slate-plugins-toolbar" "1.0.0-next.39"
+    "@udecode/slate-plugins-trailing-block" "1.0.0-next.39"
+    "@udecode/slate-plugins-ui-fluent" "1.0.0-next.39"
 
 "@uifabric/merge-styles@^7.19.2":
   version "7.19.2"
@@ -14800,7 +14825,7 @@ zen-observable@^0.8.15:
   resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
   integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
 
-zustand@^3.3.2:
+zustand@^3.4.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/zustand/-/zustand-3.5.2.tgz#cf162a8bd1d86475bf308bc856c4d02ff13fd53c"
   integrity sha512-HUCQI9O77/D/zvoWPNv4dwLriiiY2xtEqnQ0TVY8uaPjmOHls04Okd0w3sWUE9Ex2LaYlSk11DbPPIOZ6shEWg==
