@@ -18,21 +18,6 @@ const options = {
       server: process.env.EMAIL_SERVER,
       from: process.env.EMAIL_FROM,
       sendVerificationRequest: sendVerificationRequest
-      // sendVerificationRequest: ({
-      //   identifier: email,
-      //   url,
-      //   token,
-      //   baseUrl,
-      //   provider
-      // }) => {
-      //   sendVerificationRequest({
-      //     identifier: email,
-      //     url,
-      //     token,
-      //     baseUrl,
-      //     provider
-      //   });
-      // }
     })
   ],
   adapter: Adapters.Prisma.Adapter({ prisma }),

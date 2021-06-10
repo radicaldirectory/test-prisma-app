@@ -7,14 +7,14 @@ import { Button } from "@components/Button";
 import Router from "next/router";
 
 const Draft: React.FC = () => {
-  const [name, setName] = useState("");
-  const [content, setContent] = useState({ content: "" });
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
 
   const submitData = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     try {
-      const body = { name, content };
-      await fetch("/api/group", {
+      const body = { title, content };
+      await fetch("/api/post", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
@@ -28,20 +28,20 @@ const Draft: React.FC = () => {
   return (
     <Layout>
       <form onSubmit={submitData}>
-        <Title>Create New Group</Title>
+        <Title>New Draft</Title>
         <TextInput
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
-          value={name}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Title"
+          value={title}
         />
         <TextArea
           cols={50}
-          onChange={(e) => setContent({ content: e.target.value })}
+          onChange={(e) => setContent(e.target.value)}
           placeholder="Content"
           rows={8}
-          value={content.content}
+          value={content}
         />
-        <Button disabled={!name || !name} type="submit">
+        <Button disabled={!content || !title} type="submit">
           Create{" "}
         </Button>
         <a href="#" onClick={() => Router.push("/")}>
@@ -53,5 +53,3 @@ const Draft: React.FC = () => {
 };
 
 export default Draft;
-
-//TODO #2 set up Slate editor to replace textareas
