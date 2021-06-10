@@ -13,13 +13,22 @@ import {
   MARK_BOLD,
   MARK_ITALIC,
   MARK_UNDERLINE,
+  ELEMENT_H1,
   ELEMENT_PARAGRAPH,
   HeadingToolbar,
   ToolbarMark,
+  ToolbarElement,
   useStoreEditorRef,
   useEventEditorId,
   getSlatePluginType
 } from "@udecode/slate-plugins";
+import {
+  FontBoldIcon,
+  FontItalicIcon,
+  UnderlineIcon,
+  HeadingIcon
+} from "@radix-ui/react-icons";
+import { styled } from "../../stitches.config";
 
 const pluginsBasic = [
   // editor
@@ -54,6 +63,13 @@ const initialValueBasic = [
   }
 ];
 
+const Editor = styled("div", {
+  "& .slate-Toolbar": {
+    display: "flex",
+    border: "2px black"
+  }
+});
+
 export const DocumentEditor = (props) => {
   const editableProps = {
     placeholder: props.placeholder,
@@ -65,11 +81,23 @@ export const DocumentEditor = (props) => {
   const editor = useStoreEditorRef(useEventEditorId("focus"));
 
   return (
-    <>
+    <Editor>
       <HeadingToolbar>
+        <ToolbarElement
+          type={getSlatePluginType(editor, ELEMENT_H1)}
+          icon={<HeadingIcon />}
+        />
         <ToolbarMark
           type={getSlatePluginType(editor, MARK_BOLD)}
-          icon={<span>B</span>}
+          icon={<FontBoldIcon />}
+        />
+        <ToolbarMark
+          type={getSlatePluginType(editor, MARK_ITALIC)}
+          icon={<FontItalicIcon />}
+        />
+        <ToolbarMark
+          type={getSlatePluginType(editor, MARK_UNDERLINE)}
+          icon={<UnderlineIcon />}
         />
       </HeadingToolbar>
       <SlatePlugins
@@ -82,6 +110,6 @@ export const DocumentEditor = (props) => {
       >
         {props.children}
       </SlatePlugins>
-    </>
+    </Editor>
   );
 };
