@@ -3,21 +3,22 @@ import { signOut, useSession } from "next-auth/client";
 import { styled } from "../../stitches.config";
 import HeaderLeft from "./HeaderLeft";
 import HeaderRight from "./HeaderRight";
+import { Logo } from "@components/Logo";
+import { SearchBar } from "@components/SearchBar";
+import { MenuButton } from "@components/Menu";
 
 const StyledHeader = styled("header", {
+  width: "100%",
   display: "flex",
-  padding: "2rem",
-  alignItems: "center",
+  flexWrap: "nowrap",
+  flexDirection: "row",
+  alignItems: "stretch",
+  borderBottom: "2px solid black",
 
   "& a": {
     textDecoration: "none",
-    display: "inline-block"
-  },
-
-  "& p": {
     display: "inline-block",
-    fontSize: "13px",
-    paddingRight: "1rem"
+    color: "black"
   },
 
   "& a + a": {
@@ -35,8 +36,11 @@ const Header: React.FC = () => {
 
   return (
     <StyledHeader>
-      <HeaderLeft session={!!session} />
-      <HeaderRight session={session} loading={!!loading} signOut={signOut} />
+      {/* <HeaderLeft session={!!session} />
+      <HeaderRight session={session} loading={!!loading} signOut={signOut} /> */}
+      <Logo />
+      <SearchBar />
+      <MenuButton />
     </StyledHeader>
   );
 };

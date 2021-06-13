@@ -27,21 +27,23 @@ const Draft: React.FC = () => {
   };
 
   const handleChange = (newValue) => {
-    setContent(newValue);
+    const heading = newValue[0]?.children[0]?.text;
+    const contentOnly = newValue?.slice(1);
+    console.log("heading: " + heading);
+    console.log("contentOnly: " + JSON.stringify(contentOnly));
+    setName(heading);
+    setContent(contentOnly);
   };
 
   return (
     <Layout>
       <form onSubmit={submitData}>
         <Title>Create New Group</Title>
-        <TextInput
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
-          value={name}
-        />
-        <DocumentEditor onChange={handleChange} placeholder="Content">
-          value: {JSON.stringify(content)}
-        </DocumentEditor>
+
+        <DocumentEditor
+          onChange={handleChange}
+          placeholder="Your group name"
+        ></DocumentEditor>
 
         <Button disabled={!name || !name} type="submit">
           Create{" "}

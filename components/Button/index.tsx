@@ -2,14 +2,11 @@ import { styled } from "../../stitches.config";
 
 const StyledButton = styled("button", {
   cursor: "pointer",
-  padding: "0.25rem 0.5rem",
+
   // textTransform: "uppercase",
   fontWeight: "900",
   letterSpacing: "0.1em",
 
-  "+ button": {
-    marginLeft: "1rem"
-  },
   "@:hover": {
     backgroundColor: "white",
     color: "black"
@@ -33,6 +30,17 @@ const StyledButton = styled("button", {
         border: "none"
       },
       link: {}
+    },
+    content: {
+      text: {
+        padding: "0.25rem 0.5rem",
+        "+ button": {
+          marginLeft: "1rem"
+        }
+      },
+      icon: { padding: "0" },
+      textIcon: {},
+      iconText: {}
     },
     size: {
       sm: {
@@ -62,5 +70,6 @@ const StyledButton = styled("button", {
 });
 
 export const Button = (props) => {
-  return <StyledButton {...props} />;
+  const buttonType = props.submit ? "type='submit'" : "type='button'";
+  return <StyledButton {...buttonType} {...props} />;
 };

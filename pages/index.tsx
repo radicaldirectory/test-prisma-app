@@ -1,36 +1,36 @@
 import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "@components/Layout";
-import Post, { PostProps } from "@components/Post";
+import Group, { GroupProps } from "@components/Group";
 import Title from "@components/Title";
 import prisma from "@lib/prisma";
 import Page from "@components/Page";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const feed = await prisma.post.findMany({
-    where: { published: true },
+  const groups = await prisma.group.findMany({
     include: {
-      author: {
-        select: { name: true }
+      document: {
+        select: { content: true }
       }
     }
   });
-  return { props: { feed } };
+  return { props: { groups } };
 };
 
 type Props = {
-  feed: PostProps[];
+  groups: GroupProps[];
 };
 
-const Blog: React.FC<Props> = (props) => {
+const Home: React.FC<Props> = (props) => {
   return (
     <Layout>
       <Page>
-        <Title>Public Feed</Title>
+        <Title>Groups</Title>
 
         <main>
-          {props.feed.map((post) => (
-            <Post post={post} key={post.id} />
+          {props.groups.map((group) => (
+            // <Post post={post} key={post.id} />
+            <p>{group.name}</p>
           ))}
         </main>
       </Page>
@@ -38,4 +38,4 @@ const Blog: React.FC<Props> = (props) => {
   );
 };
 
-export default Blog;
+export default Home;

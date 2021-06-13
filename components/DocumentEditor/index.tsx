@@ -10,17 +10,24 @@ import {
   createUnderlinePlugin,
   createSlatePluginsComponents,
   createSlatePluginsOptions,
+  createTrailingBlockPlugin,
+  createExitBreakPlugin,
+  createNormalizeTypesPlugin,
   MARK_BOLD,
   MARK_ITALIC,
   MARK_UNDERLINE,
+  KEYS_HEADING,
   ELEMENT_H1,
+  ELEMENT_H2,
   ELEMENT_PARAGRAPH,
   HeadingToolbar,
   ToolbarMark,
   ToolbarElement,
   useStoreEditorRef,
   useEventEditorId,
-  getSlatePluginType
+  getSlatePluginType,
+  withProps,
+  StyledElement
 } from "@udecode/slate-plugins";
 import {
   FontBoldIcon,
@@ -29,6 +36,44 @@ import {
   HeadingIcon
 } from "@radix-ui/react-icons";
 import { styled } from "../../stitches.config";
+
+const optionsExitBreakPlugin = {
+  rules: [
+    {
+      hotkey: "mod+enter"
+    },
+    {
+      hotkey: "mod+shift+enter",
+      before: true
+    },
+    {
+      hotkey: "enter",
+      query: {
+        start: true,
+        end: true,
+        allow: KEYS_HEADING
+      }
+    }
+  ]
+};
+
+const StyledH1 = styled("h1", {
+  margin: "40px 0 10px"
+});
+
+const StyledParagraph = styled("p", {
+  margin: "10px 0px"
+});
+
+const components = createSlatePluginsComponents({
+  [ELEMENT_PARAGRAPH]: withProps(StyledElement, {
+    as: StyledParagraph
+  }),
+  [ELEMENT_H1]: withProps(StyledElement, {
+    as: StyledH1
+  })
+});
+const options = createSlatePluginsOptions();
 
 const pluginsBasic = [
   // editor
@@ -43,21 +88,21 @@ const pluginsBasic = [
   // marks
   createBoldPlugin(), // bold mark
   createItalicPlugin(), // italic mark
-  createUnderlinePlugin() // underline mark
-];
+  createUnderlinePlugin(), // underline mark
 
-const components = createSlatePluginsComponents();
-const options = createSlatePluginsOptions();
+  createTrailingBlockPlugin({ type: ELEMENT_PARAGRAPH }),
+  createExitBreakPlugin(optionsExitBreakPlugin),
+  createNormalizeTypesPlugin({
+    rules: [{ path: [0], strictType: ELEMENT_H1 }]
+  })
+];
 
 const initialValueBasic = [
   {
-    type: ELEMENT_PARAGRAPH,
+    type: ELEMENT_H1,
     children: [
       {
-        text: "This text is bold, italic and underlined.",
-        [MARK_BOLD]: true,
-        [MARK_ITALIC]: true,
-        [MARK_UNDERLINE]: true
+        text: ""
       }
     ]
   }
@@ -84,7 +129,7 @@ export const DocumentEditor = (props) => {
     <Editor>
       <HeadingToolbar>
         <ToolbarElement
-          type={getSlatePluginType(editor, ELEMENT_H1)}
+          type={getSlatePluginType(editor, ELEMENT_H2)}
           icon={<HeadingIcon />}
         />
         <ToolbarMark
