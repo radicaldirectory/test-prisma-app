@@ -1,15 +1,19 @@
 import { ReactNode } from "react";
 import Header from "@components/Header";
-import styles from "./Layout.module.css";
+import { styled } from "../../stitches.config";
 
 export type LayoutProps = {
   children: ReactNode;
 };
 
+const StyledBody = styled("div", {
+  padding: "0"
+});
+
 const Layout: React.FC<LayoutProps> = (props) => (
   <>
     <Header />
-    <div className={styles.layout}>{props.children}</div>
+    <StyledBody>{props.children}</StyledBody>
   </>
 );
 

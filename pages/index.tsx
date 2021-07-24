@@ -2,9 +2,9 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "@components/Layout";
 import Group, { GroupProps } from "@components/Group";
-import Title from "@components/Title";
 import prisma from "@lib/prisma";
 import Page from "@components/Page";
+import { StyledH1, StyledParagraph } from "@components/Text";
 
 export const getStaticProps: GetStaticProps = async () => {
   const groups = await prisma.group.findMany({
@@ -25,12 +25,12 @@ const Home: React.FC<Props> = (props) => {
   return (
     <Layout>
       <Page>
-        <Title>Groups</Title>
+        <StyledH1>Groups</StyledH1>
 
         <main>
           {props.groups.map((group) => (
             // <Post post={post} key={post.id} />
-            <p>{group.name}</p>
+            <StyledParagraph>{group.name}</StyledParagraph>
           ))}
         </main>
       </Page>

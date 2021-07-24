@@ -3,13 +3,14 @@ import { styled } from "../../stitches.config";
 const LogoContainer = styled("div", {
   //   background: "$yellow8",
   borderRight: "2px solid black",
-  maxHeight: "2rem",
+  maxHeight: "2.5rem",
   textAlign: "center"
 });
 
 const StyledLogo = styled("h1", {
   display: "flex",
   justifyContent: "center",
+  fontSize: "2.5rem",
   fontFamily: "viksjo",
   minWidth: "3ch",
   //   flex: "1",
@@ -17,7 +18,7 @@ const StyledLogo = styled("h1", {
   "& .emoji-logo": {
     display: "none",
     "& .emoji": {
-      fontSize: "1.4rem"
+      fontSize: "1.75rem"
       //       position: "absolute",
     }
   },

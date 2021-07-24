@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Layout from "@components/Layout";
-import Title from "@components/Title";
 // import TextArea from "@components/TextArea";
 import { DocumentEditor } from "@components/DocumentEditor";
 import TextInput from "@components/TextInput";
 import { Button } from "@components/Button";
 import Router from "next/router";
+import { StyledH1 } from "@components/Text";
 
 const Draft: React.FC = () => {
   const [name, setName] = useState("");
@@ -38,14 +38,11 @@ const Draft: React.FC = () => {
   return (
     <Layout>
       <form onSubmit={submitData}>
-        <Title>Create New Group</Title>
+        <StyledH1>New Group</StyledH1>
 
-        <DocumentEditor
-          onChange={handleChange}
-          placeholder="Your group name"
-        ></DocumentEditor>
+        <DocumentEditor onChange={handleChange} placeholder="Your group name" />
 
-        <Button disabled={!name || !name} type="submit">
+        <Button disabled={!name || !content} type="submit">
           Create{" "}
         </Button>
         <a href="#" onClick={() => Router.push("/")}>

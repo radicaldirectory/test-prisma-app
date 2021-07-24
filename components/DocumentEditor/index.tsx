@@ -36,6 +36,7 @@ import {
   HeadingIcon
 } from "@radix-ui/react-icons";
 import { styled } from "../../stitches.config";
+import { StyledH1, StyledParagraph } from "@components/Text";
 
 const optionsExitBreakPlugin = {
   rules: [
@@ -56,14 +57,6 @@ const optionsExitBreakPlugin = {
     }
   ]
 };
-
-const StyledH1 = styled("h1", {
-  margin: "40px 0 10px"
-});
-
-const StyledParagraph = styled("p", {
-  margin: "10px 0px"
-});
 
 const components = createSlatePluginsComponents({
   [ELEMENT_PARAGRAPH]: withProps(StyledElement, {
