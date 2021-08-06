@@ -24,15 +24,20 @@ First up you need a computer with [Node.js](https://nodejs.org/en/) installed an
 Open a terminal in a suitable folder and run `git clone https://github.com/radicaldirectory/radical-directory.git`
 
 `cd radical-directory` to go into the new folder
-`npm i` to install dependencies for the app
+`npm i` to install dependencies for the app. there are quite a few, may take a sec.
 
 the app is almost ready to run. but there are some extra things to do first.
 
 ### fonts
 
-this app uses some fonts (Viksjo) that can't be included in an open source repo due to licencing. this is annoying. it also contains another free font called Lato. both are in or have been converted to .woff and .woff2 format.
-the stylesheet expects there to be a directory in the root of the project called 'fonts', inside of which there are directories 'lato' and 'viksjo' which contain the font files. easiest is to just ask Meri to send them to you. otherwise you can manually do that.
+this app uses some fonts ([Viksjo](https://monokrom.no/fonts/viksjoe)) that can't be included in an open source repo due to licencing. this is annoying. it also contains another free font called [Lato](https://fonts.google.com/specimen/Lato). both are in or have been converted to .woff and .woff2 format.
+the stylesheet expects there to be a directory in the root of the project called 'fonts', inside of which there are directories 'lato' and 'viksjo' which contain the font files. easiest is to just ask Meri to send them to you. otherwise you can manually get the fonts, [convert them](https://cloudconvert.com/woff-converter) and set them up like described.
 
 ### env file
+
+there is a file in the repo called `.env.example`. If you can't see it, it's because files that start with a dot are hidden on file browsers. If you open up the repo in something like VSCode it should be right there.
+The `.env.example` file is a template for you to create a file called `.env`. You should make one by copying and pasting the contents of the former into a new file. This `.env` file is where the secret codes and any kind of contextual information for running the app in connection to other services, such as a database.
+
+### database
 
 open Postgres.app if ur using that. click 'initialise'. now a database server is running on your computer. on a mac you can see an elephant in the menu bar. its ok to close the window.
