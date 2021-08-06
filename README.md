@@ -2,7 +2,7 @@
 
 This repo contains the source code for the beginnings of Radical Directory.
 
-It's a Next.js fullstack Typescript app, configured to interface with a Postgres database using Prisma as an ORM. Passwordless email authentication has been implemented using `next-auth`, and styling is handled by a fairly new CSS-in-JS library called Stitches. Storybook is also installed as a component explorer, and the beginnings of a component library is sketched out based upon Radix UI accessible component primitives.
+It's a [Next.js](https://nextjs.org) fullstack Typescript app, configured to interface with a Postgres database using [Prisma](https://www.prisma.io) as an ORM. Passwordless email authentication has been implemented using `next-auth`, and styling is handled by a fairly new CSS-in-JS library called [Stitches](https://stitches.dev). [Storybook](https://storybook.js.org) is also installed as a component explorer, and the beginnings of a component library is sketched out based upon [Radix UI](https://www.radix-ui.com/docs/primitives/overview/introduction) accessible component primitives.
 
 Current work:
 
@@ -19,7 +19,7 @@ Future plans:
 
 ## lil guide for starting local development
 
-First up you need a computer with [Node.js](https://nodejs.org/en/) installed and Postgres. The easiest way to install Postgres is [Postgres.app](https://postgresapp.com) (maybe get version 12?), and you might also like to have a Postgres GUI client like [Postico](https://eggerapps.at/postico/) which is for Mac.
+First up you need a computer with [Node.js](https://nodejs.org/en/) and Postgres installed. The easiest way to install Postgres is [Postgres.app](https://postgresapp.com) (maybe get version 12?), and you might also like to have a Postgres GUI client like [Postico](https://eggerapps.at/postico/) (for Mac only).
 
 Open a terminal in a suitable folder and run `git clone https://github.com/radicaldirectory/radical-directory.git`
 
@@ -41,3 +41,11 @@ The `.env.example` file is a template for you to create a file called `.env`. Yo
 ### database
 
 open Postgres.app if ur using that. click 'initialise'. now a database server is running on your computer. on a mac you can see an elephant in the menu bar. its ok to close the window.
+
+in the previous step, we made a .env file that included this string: `DATABASE_URL="postgresql://postgres:postgres@localhost:5432/db?schema=public"`. This is a database connection URL that should work for the default database you just created. It addresses your local computer (localhost) on port 5432 (which is the default port for postgres - you can change this in postgres.app) with a username and password of postgres. Within this server it addresses a (not yet existing) database called db with a public schema.
+
+run `npx prisma db push`. This runs a helpful tool by Prisma which connects to your database (using the connection URL) and sets up the data tables according to the way we want to use them in our app, i.e. the data schema. The data schema for the app is defined in the file `prisma/schema.prisma`. This command also generates the 'Prisma Client', which needs to be re-generated if the schema changes.
+
+### running the app!
+
+If everything worked well, now you can run the app. Run `npm run dev` to start Next.js. Then open your browser and go to [http://localhost:3000](http://localhost:3000) to see the app running.
