@@ -24,6 +24,7 @@ First up you need a computer with [Node.js](https://nodejs.org/en/) and Postgres
 Open a terminal in a suitable folder and run `git clone https://github.com/radicaldirectory/radical-directory.git`
 
 `cd radical-directory` to go into the new folder
+
 `npm i` to install dependencies for the app. there are quite a few, may take a sec.
 
 the app is almost ready to run. but there are some extra things to do first.
@@ -52,13 +53,17 @@ If everything worked well, now you can run the app. Run `npm run dev` to start N
 ## quick tour of the repo
 
 components/ -> React components go here
+
 pages/ -> special Next.js folder in which the file structure creates the app routing structure. each file is a page in the app, except files in...
+
 pages/api -> special Next.js folder - each file is accessed as server-side code that can be called as an API at the corresponding route.
+
 lib/ -> basically miscellanious code. `email.ts` is a handler for sending emails with the Mailgun API. `prisma.ts` initialises a Prisma client that other code can use, fixing [this problem](https://www.prisma.io/docs/support/help-articles/nextjs-prisma-client-dev-practices)
 
 stitches.config.ts -> this file contains key info about the styling of the app.
 
 .storybook/ -> a bunch of configuration is here to try and get storybook, typescript and next.js all playing together nicely
+
 babel.config.json -> other configuration for next.js, typescript, storybook
 
 .github/workflows/ -> this contains workflows for a tool called github actions. there is one in there that connects the repo to a testing service called chromatic.
