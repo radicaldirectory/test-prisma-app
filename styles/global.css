@@ -1,7 +1,9 @@
 @font-face {
   font-family: "Viksjo";
   src: url("../fonts/viksjo/ViksjoeTrial-RegularItalic.woff2") format("woff2"),
-    url("../fonts/viksjo/ViksjoeTrial-RegularItalic.woff") format("woff");
+    url("../fonts/viksjo/ViksjoeTrial-RegularItalic.woff") format("woff"),
+    url("../fonts/bebas-neue/BebasNeue-Bold.woff2") format("woff2"),
+    url("../fonts/bebas-neue/BebasNeue-Bold.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -10,7 +12,9 @@
 @font-face {
   font-family: "Viksjo";
   src: url("../fonts/viksjo/ViksjoeTrial-Regular.woff2") format("woff2"),
-    url("../fonts/viksjo/ViksjoeTrial-Regular.woff") format("woff");
+    url("../fonts/viksjo/ViksjoeTrial-Regular.woff") format("woff"),
+    url("../fonts/bebas-neue/BebasNeue-Bold.woff2") format("woff2"),
+    url("../fonts/bebas-neue/BebasNeue-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,7 +23,9 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-Black.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Black.woff") format("woff");
+    url("../fonts/lato/Lato-Black.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-black/lato-black.woff")
+      format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -28,7 +34,9 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-BlackItalic.woff2") format("woff2"),
-    url("../fonts/lato/Lato-BlackItalic.woff") format("woff");
+    url("../fonts/lato/Lato-BlackItalic.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-black-italic/lato-black-italic.woff")
+      format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -37,7 +45,9 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Bold.woff") format("woff");
+    url("../fonts/lato/Lato-Bold.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-bold/lato-bold.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -46,7 +56,9 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-Italic.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Italic.woff") format("woff");
+    url("../fonts/lato/Lato-Italic.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-normal-italic/lato-normal-italic.woff")
+      format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -55,7 +67,9 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-LightItalic.woff2") format("woff2"),
-    url("../fonts/lato/Lato-LightItalic.woff") format("woff");
+    url("../fonts/lato/Lato-LightItalic.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-light-italic/lato-light-italic.woff")
+      format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -64,7 +78,9 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-Light.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Light.woff") format("woff");
+    url("../fonts/lato/Lato-Light.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-light/lato-light.woff")
+      format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -73,16 +89,20 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-BoldItalic.woff2") format("woff2"),
-    url("../fonts/lato/Lato-BoldItalic.woff") format("woff");
+    url("../fonts/lato/Lato-BoldItalic.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-bold-italic/lato-bold-italic.woff")
+      format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato Hairline";
+  font-family: "Lato";
   src: url("../fonts/lato/Lato-Hairline.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Hairline.woff") format("woff");
+    url("../fonts/lato/Lato-Hairline.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-hairline/lato-hairline.woff")
+      format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -91,16 +111,20 @@
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Regular.woff") format("woff");
+    url("../fonts/lato/Lato-Regular.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-normal/lato-normal.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato Hairline";
+  font-family: "Lato";
   src: url("../fonts/lato/Lato-HairlineItalic.woff2") format("woff2"),
-    url("../fonts/lato/Lato-HairlineItalic.woff") format("woff");
+    url("../fonts/lato/Lato-HairlineItalic.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/fonts/lato-hairline-italic/lato-hairline-italic.woff")
+      format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;

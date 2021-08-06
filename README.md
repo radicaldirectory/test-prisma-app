@@ -30,8 +30,7 @@ the app is almost ready to run. but there are some extra things to do first.
 
 ### fonts
 
-this app uses some fonts ([Viksjo](https://monokrom.no/fonts/viksjoe)) that can't be included in an open source repo due to licencing. this is annoying. it also contains another free font called [Lato](https://fonts.google.com/specimen/Lato). both are in or have been converted to .woff and .woff2 format.
-the stylesheet expects there to be a directory in the root of the project called 'fonts', inside of which there are directories 'lato' and 'viksjo' which contain the font files. easiest is to just ask Meri to send them to you. otherwise you can manually get the fonts, [convert them](https://cloudconvert.com/woff-converter) and set them up like described.
+this app uses some fonts ([Viksjo](https://monokrom.no/fonts/viksjoe)) that can't be included in an open source repo due to licencing. other fonts used are open source types, [Lato](https://fonts.google.com/specimen/Lato) and [Bebas Neue](https://github.com/dharmatype/Bebas-Neue) which is provided as a backup for Viksjo. the app should work without Viksjo but the header will not look the same as it should. you can ask Meri to send the Viksjo files to you, otherwise you can manually get the free trial fonts, [convert them](https://cloudconvert.com/woff-converter) and check the `styles/global.css` for exactly what they should be named and where to put them.
 
 ### env file
 
@@ -49,3 +48,17 @@ run `npx prisma db push`. This runs a helpful tool by Prisma which connects to y
 ### running the app!
 
 If everything worked well, now you can run the app. Run `npm run dev` to start Next.js. Then open your browser and go to [http://localhost:3000](http://localhost:3000) to see the app running.
+
+## quick tour of the repo
+
+components/ -> React components go here
+pages/ -> special Next.js folder in which the file structure creates the app routing structure. each file is a page in the app, except files in...
+pages/api -> special Next.js folder - each file is accessed as server-side code that can be called as an API at the corresponding route.
+lib/ -> basically miscellanious code. `email.ts` is a handler for sending emails with the Mailgun API. `prisma.ts` initialises a Prisma client that other code can use, fixing [this problem](https://www.prisma.io/docs/support/help-articles/nextjs-prisma-client-dev-practices)
+
+stitches.config.ts -> this file contains key info about the styling of the app.
+
+.storybook/ -> a bunch of configuration is here to try and get storybook, typescript and next.js all playing together nicely
+babel.config.json -> other configuration for next.js, typescript, storybook
+
+.github/workflows/ -> this contains workflows for a tool called github actions. there is one in there that connects the repo to a testing service called chromatic.
