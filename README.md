@@ -1,6 +1,6 @@
 # Radical Directory – Web App
 
-This repo contains the source code for the beginnings of Radical Directory.
+This repo was a test for building a fullstack app with Nextjs and Prisma from scratch, and it's now been superseded by a JAMstack coupling of rd-keystone and rd-landing-page (currently private)
 
 It's a [Next.js](https://nextjs.org) fullstack Typescript app, configured to interface with a Postgres database using [Prisma](https://www.prisma.io) as an ORM. Passwordless email authentication has been implemented using `next-auth`, and styling is handled by a CSS-in-JS library called [Stitches](https://stitches.dev). [Storybook](https://storybook.js.org) is also installed as a component explorer, and the beginnings of a component library is sketched out based upon [Radix UI](https://www.radix-ui.com/docs/primitives/overview/introduction) accessible component primitives.
 
